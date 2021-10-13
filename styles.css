@@ -1,0 +1,12 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-family: "Dosis", sans-serif;
+  color: #cdd0db;
+}
+nav {
+  display: flex;
+  float: right;
+}
