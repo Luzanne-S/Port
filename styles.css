@@ -8,5 +8,13 @@ h1 {
 }
 nav {
   display: flex;
-  float: right;
+ 
+}
+
+.header_text{
+  padding-top: 15%;
+}
+.aboutMe{
+  text-align: center;
+  padding-bottom: 2%;
 }
