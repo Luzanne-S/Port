@@ -18,3 +18,14 @@ nav {
   text-align: center;
   padding-bottom: 2%;
 }
+.skills{ text-align: center;
+  padding-top: 5%;
+  padding-bottom: 2%;
+
+}
+.container_skills{
+  font-family: 'Comfortaa', cursive;
+  margin-left:10%;
+  color: #c09197;
+  margin-bottom: 5%;
+}
