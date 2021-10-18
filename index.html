@@ -22,7 +22,7 @@
       rel="stylesheet"
     />
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
-   
+    <script src="https://kit.fontawesome.com/5d391d372a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css" />
     <title>Luzanne Smith</title>
   </head>
@@ -39,15 +39,15 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon" ></span>
          
         </button>
         <div class="collapse navbar-collapse" id="navbarScroll">
           <ul class="navbar-nav me-auto my-2 my-lg-0">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">About Me</a>
+              <a class="nav-link" aria-current="page" href="#about">About Me</a>
             </li>
-            <li class="nav-item"><a class="nav-link" href="#">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
             <li class="nav-item">
               <a class="nav-link" href="#">Testimonials</a>
@@ -79,7 +79,7 @@
 <!--About Me-->
 <div class="container">
   <div class="about">
-   <h2 class="aboutMe">About Me</h2>
+   <h2 class="aboutMe" id="about">About Me</h2>
 <div class="card mb-3" >
   <div class="row g-0">
     <div class="col-md-4">
@@ -97,7 +97,7 @@
 </div>
 </div>
 <!--Skills-->
-<h2 class="skills">Skills</h2>
+<h2 class="skills" id="skills">Skills</h2>
 <div class="container_skills"style="overflow-x: hidden">
   <div class="row">
     <div class="col">html 5</div>
@@ -113,7 +113,27 @@
    
   </div>
 </div>
-</body>
+<!--Footer-->
+<div class="container">
+  <footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="#about" class="nav-link px-2 text-muted">About Me</a></li>
+      <li class="nav-item"><a href="#skills" class="nav-link px-2 text-muted">Skills</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Projects</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Testimonials</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Contact Me</a></li>
+    </ul>
+    <p class="text-center text-muted">&copy; 2021 Luzanne Smith</p>
+   
+    <span class="socialIcons">
+      <a class="socialIcons"style="color:#8f9ca9;" href= "https://www.linkedin.com/in/luzannesmith" target="_blank" ><i class="fab fa-linkedin"></i></a>
+      &nbsp;
+      <a class="socialIcons"style="color:#8f9ca9;"href="https://github.com/Luzanne-S" target="_blank" ><i class="fab fa-github-square"></i></a>
+    </span>
+    
+    
+  </footer>
+</div>
 
 
     <script
