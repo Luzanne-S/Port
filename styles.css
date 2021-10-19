@@ -18,7 +18,7 @@ nav {
   text-align: center;
   padding-bottom: 2%;
 }
-.skills,.projects{ text-align: center;
+.skills,.projects,.contact{ text-align: center;
   padding-top: 5%;
   padding-bottom: 2%;
 
@@ -37,4 +37,21 @@ nav {
 .projects_grid{
   margin: auto;
  width:70%;
+}
+.bg-img{
+  background-image:url("images/yulia-khvorostiana-a-yTvCSeLIw-unsplash.jpg");
+  min-height: 420px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+ 
+  
+}
+form{
+  display:flex;
+  flex-direction: column;
+  width:50%;
+  align-content: center;
+  margin:auto;
 }
