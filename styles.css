@@ -18,7 +18,7 @@ nav {
   text-align: center;
   padding-bottom: 2%;
 }
-.skills,.projects,.contact{ text-align: center;
+.skills,.projects,.contact,.testimonials{ text-align: center;
   padding-top: 5%;
   padding-bottom: 2%;
 
@@ -29,15 +29,19 @@ nav {
   color: #c09197;
   margin-bottom: 5%;
 }
-.socialIcons,.card-link{
+.socialIcons,.card-link,.container_testimonials{
  display: flex;
  flex-direction: row;
  justify-content: center;
+}
+.container_testimonials{
+  height: 300px;
 }
 .projects_grid{
   margin: auto;
  width:70%;
 }
+
 .bg-img{
   background-image:url("images/yulia-khvorostiana-a-yTvCSeLIw-unsplash.jpg");
   min-height: 420px;
