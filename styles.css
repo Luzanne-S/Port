@@ -14,10 +14,21 @@ nav {
 .header_text{
   padding-top: 15%;
 }
+
 .aboutMe{
+  padding-top: 3%;
   text-align: center;
-  padding-bottom: 2%;
+  
 }
+.ba-img{
+  background-image:url("images/about.png");
+  min-height: 200px;
+ 
+  background-position: center;
+  background-repeat:no-repeat;
+  background-size: contain;
+  position: relative;
+ }
 .skills,.projects,.contact,.testimonials{ text-align: center;
   padding-top: 5%;
   padding-bottom: 2%;
@@ -26,36 +37,69 @@ nav {
 .container_skills{
   font-family: 'Comfortaa', cursive;
   margin-left:10%;
-  color: #c09197;
+padding-top: 10%;
+  color: #92686d;
   margin-bottom: 5%;
 }
+.bk-img{
+  background-image:url("images/skills.png");
+  min-height: 150px;
+  background-position: center;
+  background-repeat:no-repeat;
+  background-size: contain;
+  position: relative;
+  opacity: 0.9;
+ }
+ .bp-img{
+  background-image:url("images/projects.png");
+  min-height: 200px;
+  background-position: center;
+  background-repeat:no-repeat;
+  background-size: contain;
+  position: relative;
+ }
+
 .socialIcons,.card-link,.container_testimonials{
  display: flex;
  flex-direction: row;
  justify-content: center;
 }
 .container_testimonials{
-  height: 300px;
+  height: 200px;
+  margin-bottom: 10%;
+  padding-top: 5%;
+  text-align: center;
+  margin-block: center;
 }
 .projects_grid{
   margin: auto;
  width:70%;
 }
-
-.bg-img{
-  background-image:url("images/yulia-khvorostiana-a-yTvCSeLIw-unsplash.jpg");
-  min-height: 420px;
+.bt-img{
+  background-image:url("images/testimonial.png");
+  min-height: 100px;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   position: relative;
- 
-  
 }
+.bg-img{
+  background-image:url("images/contact.png");
+  min-height: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:contain;
+  position: relative;
+
+}
+
 form{
   display:flex;
   flex-direction: column;
   width:50%;
   align-content: center;
-  margin:auto;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin:auto; 
+  
 }
