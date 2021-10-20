@@ -10,7 +10,11 @@ nav {
   display: flex;
  
 }
-
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 .header_text{
   padding-top: 15%;
 }
@@ -18,12 +22,11 @@ nav {
 .aboutMe{
   padding-top: 3%;
   text-align: center;
-  
+  margin-bottom: -80%;
 }
 .ba-img{
   background-image:url("images/about.png");
   min-height: 200px;
- 
   background-position: center;
   background-repeat:no-repeat;
   background-size: contain;
