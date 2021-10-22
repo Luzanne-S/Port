@@ -77,6 +77,8 @@ padding-top: 10%;
 .projects_grid{
   margin: auto;
  width:70%;
+ margin-bottom: 5%;
+ text-align: center;
 }
 .bt-img{
   background-image:url("images/testimonial.png");
