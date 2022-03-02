@@ -38,7 +38,9 @@ a{
   flex-direction: column;
   width:50%;
 }
-
+.tool-img{
+  display: none;
+}
 .container_tools{
   font-family: 'Comfortaa', cursive;
   width:fit-content;
@@ -58,31 +60,59 @@ a{
 #projects{
   height:700px;
 }
-.projects-text{
-  margin-top:300px;
-}
-.grid{
-  width:50%;
-  display:flex;
+.project-grid{
+  width:60%;
+  display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around;
-  margin-top: -35%;
-  margin-left: 15%;
-
+  margin-left: 30px;
+  margin-right: 0;
 }
-.pro-col{
-  background-color: #ccefa5d8;
-  border-radius: 10px;
-  width:32%;
+.projects-text{
+  margin-top:100px;
+}
+.btn-close{
   color: #fff;
-  font-weight:bolder;
-  padding:20px;
-  margin: 5px;
+  text-align: center;
 }
-.pro-col:hover{
-  background-color: #f7b7a9;
+
+.onClickTextOverImage{
+  width:300px;
+  height:300px;
+  background-size:cover;
+  border-radius:16px;
+  margin:12px;
+  box-shadow:0 0 16px rgba(0,0,0,0.5);
+  cursor:pointer;
+  position:relative;
+  width:40%;  
 }
+.p-text-img{
+  padding-top: -100%;
+}
+.onClickTextOverImage div{
+  position:absolute;
+  color:#fff;
+  padding:0;
+  top:0;
+  bottom:0;
+  right:0;
+  left:0;
+  background-color:#f7b7a975;
+  border-radius:16px;
+  padding-top:35%;
+  text-align:center;
+  opacity:0;
+  visibility:hidden;
+  transition:.3s;
+}
+
+.onClickTextOverImage.show div{
+  opacity:1;
+  padding-top:0;
+  visibility:visible;
+}
+
 
 footer{
   height: 500px;
@@ -153,22 +183,27 @@ footer{
 
 #projects{
   flex-direction: column-reverse;
-}
-.projects-img{
-  display: none;
-}
-.grid{
-  width:80%;
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  margin-top: 8%;
+  margin-top: 800px;
+
 }
-.pro-col{
+.project-grid{
+  width: 100%;
+}
+
+.onClickTextOverImage{
   width:100%;
-  margin-left:-13%;
+  height:400px;
 }
+.tool-img{
+  display: block;
+  z-index:-2;
+  width:100%;
+  height: auto;
+}
+
+
+
 .fa-brands,.fa-solid{
   font-size:12px;
 }
@@ -188,7 +223,9 @@ margin-left: -110px;
 .instagram{
   margin-top:-36px;
 }
-
+.footer-logo{
+  margin-bottom:-500px;
+}
 .footer-img{
   width:100%;
   height: auto;
