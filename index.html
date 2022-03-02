@@ -16,6 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/5d391d372a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"defer></script>
     <title>Luzanne Smith -Front End Developer</title>
   </head>
   <body>
@@ -30,38 +31,37 @@
       <img src="images/introductory.png"class="introductory-img" alt="illustration of woman with a desktop"/>
     </div>  
   <div class="head-text">
- <h1>Hi there I'm Luzanne.  <br/>I am a  Front End Developer</h1>
+ <div data-aos="fade-up"data-aos-duration="2000"><h1>Hi there I'm Luzanne.  <br/>I am a  Front End Developer</h1></div>
  <p>My educational background is within Anthropology but I found a passion for programming and front end development.</p>
  <p> At this stage of my journey I am currently freelancing as a front end development with the hopes of joining an amazing company and creating extrodinary projects </p>
-  </div>
-  
+  </div> 
 </div>
 
 <!--Toolkit-->
 <div id="toolkit">
 <h2 class="tools-h2">My Toolkit</h2>
-
-<div class="tools-row">
+<img src="images/tools.png" class="tool-img"/>
+<div class="tools-row"data-aos="fade-up"data-aos-duration="2000">
 <div class="container_tools">
   <div class="tools-row1">
-    <div class="col">html & css</div>
-    <div class="col">firebase</div>
+    <div class="col">html</div>
+    <div class="col">css</div>
     <div class="col">javascript</div>
     <div class="col">react</div>
   </div>
   <div class="tools-row2">
+    <div class="col">invision</div>
     <div class="col">node.js</div>
-    <div class="col">rest api's</div>
-    <div class="col">hosting</div>
+    <div class="col">rest api</div>
     <div class="col">git</div>   
   </div>
 </div>
 <div class="container_tools">
   <div class="tools-row1">
-    <div class="col">html & css</div>
+    <div class="col">bootstrap</div>
     <div class="col">firebase</div>
-    <div class="col">javascript</div>
-    <div class="col">react</div>
+    <div class="col">php</div>
+    <div class="col">sql</div>
   </div>
   <div class="tools-row2">
     <div class="col">node.js</div>
@@ -74,20 +74,39 @@
 </div>
 <!--Projects-->
 <div id="projects">
-  <div class="projects-image"> <img src="images/projects.png" class="projects-img" alt="illustration of woman with webpage"/>
-    <div class="grid">
-    <div class="pro-col" class="project1">dictionary app</div>
-    <div class="pro-col" class="project2">mg gallery</div>
-    <div class="pro-col"class="project3">interior livingly</div>
-    <div class="pro-col"class="project4">api</div>
-    <div class="pro-col"class="project5">ebg</div>
-    <div class="pro-col"class="project6">ecommerce</div>
-  </div>
+  <div class="project-grid">
+  <div class="onClickTextOverImage"
+  style="background-image:url('images/Dictionary.png')">
+<div class="p-text-img"><label class="btn-close" for="3">X</label>
+  <h3>Disctionary app</h3>
+  <p>the user is able to type in a word and recieve a definition, phonetics and images associated with the word</p>
+  <a href="#">live site</a>
+  <a href="#">repository</a>
+</div>
+</div>
+<div class="onClickTextOverImage"
+  style="background-image:url('images/Cocoa.png')">
+  <label class="btn-close" for="3">X</label>
+<div class="p-text-img">Bananas are <a target="_blank" href="https://www.google.com" onclick="stopPropagation(event)">Bananas</a></div>
+</div>
+<div class="onClickTextOverImage"
+  style="background-image:url('images/Cocoa.png')">
+  <label class="btn-close" for="3">X</label>
+<div class="p-text-img">Bananas are <a target="_blank" href="https://www.google.com" onclick="stopPropagation(event)">Bananas</a></div>
+</div>
+<div class="onClickTextOverImage"
+  style="background-image:url('images/Weather.png')">
+<div class="p-text-img">Apples are not oranges</div>
+</div>
+</div>
+
+<div>
 </div>
   <div class="projects-text"> <h2 class="projects-h2">These are some projects I've been working on</h2>
     <p>for more projects, have a look at my github profile</p>
   </div>
 </div>
+
 <!--Footer-->
   <footer>
     <div class="footer-column1"> 
