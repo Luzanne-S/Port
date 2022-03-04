@@ -8,8 +8,8 @@ body {
 
 h1 {
   font-family: "Dosis", sans-serif;
-  color: #cdd0db;
-  margin-top: 30%;
+  color: #293241;
+
 }
 
 a{
@@ -41,6 +41,10 @@ a{
 .tool-img{
   display: none;
 }
+
+#toolkit{
+  margin:10% 0 15%;
+}
 .container_tools{
   font-family: 'Comfortaa', cursive;
   width:fit-content;
@@ -53,6 +57,7 @@ a{
 .col{
   padding:20px;
 }
+
 .tools-h2{
   text-align: center;
 }
@@ -71,18 +76,28 @@ a{
 .projects-text{
   margin-top:100px;
 }
+.projects-h2,.footer-h2,.tools-h2{
+  color: #293241;
+  font-weight:bolder;
+}
 .btn-close{
   color: #fff;
-  text-align: center;
+  float:right;
+  margin-right: 20px;
+  margin-top: 5%;
 }
-
+.p-text-img a{
+  color:#f7b7a9;
+  text-decoration:double;
+}
 .onClickTextOverImage{
   width:300px;
   height:300px;
   background-size:cover;
+  background-position: center;
   border-radius:16px;
   margin:12px;
-  box-shadow:0 0 16px rgba(0,0,0,0.5);
+  box-shadow:0 0 16px rgba(0, 0, 0, 0.116);
   cursor:pointer;
   position:relative;
   width:40%;  
@@ -98,7 +113,7 @@ a{
   bottom:0;
   right:0;
   left:0;
-  background-color:#f7b7a975;
+  background-color:#353333de;
   border-radius:16px;
   padding-top:35%;
   text-align:center;
@@ -184,11 +199,12 @@ footer{
 #projects{
   flex-direction: column-reverse;
   align-items: center;
-  margin-top: 800px;
+  margin-top: 1200px;
 
 }
 .project-grid{
   width: 100%;
+  margin-left: 0;
 }
 
 .onClickTextOverImage{
@@ -209,7 +225,7 @@ footer{
 }
 
 .linkedin{
-  margin-top: -50px;
+  margin-top: -150px;
   margin-left: -2px;
 }
 .email{
