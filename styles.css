@@ -20,7 +20,7 @@ a{
   width:150px;
   height:150px;
 }
-.head-content,.tools-row1,.tools-row2,.tools-row,#projects,footer{
+.head-content,.tools-row,#projects,footer{
   display: flex;
   flex-direction: row;
 }
@@ -45,17 +45,24 @@ a{
 #toolkit{
   margin:10% 0 15%;
 }
-.container_tools{
+.tools-row{
   font-family: 'Comfortaa', cursive;
+  flex-wrap: wrap;
   width:fit-content;
-  margin: auto;
+  text-align: center;
+   margin:auto;
   color: #92686d;
   margin-bottom: 5%;
-
 }
-
+.tools-row:after{
+  content:"";
+  display:table;
+  clear:both;
+}
 .col{
-  padding:20px;
+  float: left;
+  width: 25%;
+  padding: 10px;
 }
 
 .tools-h2{
@@ -197,8 +204,8 @@ footer{
   margin-left: -160px;
 }
 
-@media (max-width:830px) {
-  .head-content,.tools-row1,.tools-row2,#About,footer{
+@media (max-width:700px) {
+  .head-content,.tools-row,#About,footer{
     flex-direction: column;
 }
 .head-text{
@@ -226,14 +233,17 @@ footer{
   width:100%;
   height: auto;
 }
-
+.col{
+  
+  width: 100%;
+}
 .fa-brands,.fa-solid{
   font-size:12px;
 }
 
 .linkedin{
   margin-left: -180px;
-
+  margin-top: 35px;
 }
 .email{
   margin-left: -295px;
