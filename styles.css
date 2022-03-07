@@ -4,7 +4,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  color:rgb(107, 107, 107);
+  color:rgb(128, 125, 125);
 }
 
 h1,h2,h3{
@@ -196,18 +196,18 @@ footer{
 .fa-brands:hover,.fa-solid:hover{
   color:#f7b7a9;
 }
-.linkedin{
-  margin-left:15px ;
+.linkedin,.instagram{
+  margin-left:60px ;
 }
-.email{
-  margin-left: -150px;
+.email,.github{
+  margin-left: -40px;
 }
 .github{
   margin-top: 50px;
-  margin-left: -160px;
+
 }
 
-@media (max-width:700px) {
+@media (max-width:740px) {
   .head-content,.tools-row,#About,footer{
     flex-direction: column;
 }
@@ -270,4 +270,75 @@ margin-left: -290px;
 .footer-h2,.footer-h4{
   margin:auto;
 }
+}
+@media (min-width:766px) and (max-width:916px) {
+  .head-content,#projects,footer{
+    flex-direction: column;
+}
+.head-text{
+  margin:auto;
+}
+.tools-row{
+  flex-direction: row;
+}
+#projects{
+  margin:auto;
+  flex-direction: column-reverse;
+}
+.projects-text{
+  text-align: center;
+}
+.project-grid{
+  width: 100%;
+  margin-right:-50px;
+}
+.footer-img{
+  margin-right:200px;
+ 
+}
+.socialIcons{
+  margin-left:170px;
+ margin-top: 0;
+}
+  .fa-brands,.fa-solid{
+    font-size: 10px;
+  }
+  .linkedin{
+    margin-left: -180px;
+    margin-top: 45px;
+  }
+  .email{
+    margin-left: -295px;
+    margin-top: -35px;
+  }
+  .github{
+    margin-top: 30px;
+  margin-left: -290px;
+  }
+  .instagram{
+    margin-top:-42px;
+    margin-left:-180px;
+  }
+}
+
+@media (min-width:830px) and (max-width:1190px) {
+  .linkedin{
+    margin-left: -190px;
+    margin-top: 35px;
+  }
+  .email{
+    margin-left: -295px;
+    margin-top: -35px;
+  }
+  .github{
+    margin-top: 24px;
+  margin-left: -290px;
+  }
+  .instagram{
+    margin-top:-60px;
+    margin-left:-180px;
+  }
+  .onClickTextOverImage div{
+    height: max-content;
+  }
 }
