@@ -4,11 +4,12 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  color:rgb(107, 107, 107);
 }
 
-h1 {
-  font-family: "Dosis", sans-serif;
-  color: #293241;
+h1,h2,h3{
+  font-family: 'Mulish', sans-serif;
+  color: #44516b;
 
 }
 
@@ -84,8 +85,10 @@ a{
   margin-top:100px;
 }
 .projects-h2,.footer-h2,.tools-h2{
-  color: #293241;
   font-weight:bolder;
+}
+h3{
+color: #fff;
 }
 .btn-close{
   color: #fff;
