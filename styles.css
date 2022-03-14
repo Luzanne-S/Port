@@ -1,7 +1,9 @@
 *{
   box-sizing: border-box;
 }
-
+html{
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Poppins", sans-serif;
   color:rgb(128, 125, 125);
@@ -11,6 +13,17 @@ h1,h2,h3{
   font-family: 'Mulish', sans-serif;
   color: #44516b;
 
+}
+.type-h1{
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 2s steps(20, end) forwards;         
+  font-size: 80%;
+  width: 0;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 55% }
 }
 
 a{
@@ -65,13 +78,14 @@ a{
   color: #3b472d;
 
 }
-.tools-row:after{
-  content:"";
-  display:table;
-  clear:both;
+.github-profile,.col{
+  font-family: 'Source Code Pro', monospace; 
 }
+.github-profile:hover{
+  text-transform: uppercase;
+}
+
 .col{
-  font-family: 'Source Code Pro', monospace;
   float: left;
   width: 25%;
   height:fit-content;
@@ -201,12 +215,7 @@ footer{
   padding:12px;
   border-radius: 50%;
 }
-.fa-chevrons-down{
-  font-size: 60px;
-  color:#ccefa5;
-  background-color: transparent;
 
-}
 .fa-brands:hover,.fa-solid:hover{
   color:#f7b7a9;
 }
@@ -228,7 +237,9 @@ footer{
 .head-text{
   width:100%;
 }
-
+.type-h1{
+  font-size:9px;    
+}
 #projects{
   flex-direction: column-reverse;
   align-items: center;
@@ -265,20 +276,20 @@ footer{
 }
 
 .linkedin{
-  margin-left: -180px;
+  margin-left: -60px;
   margin-top: 35px;
 }
 .email{
-  margin-left: -295px;
+  margin-left: -145px;
   margin-top: -35px;
 }
 .github{
   margin-top: 30px;
-margin-left: -290px;
+margin-left: -145px;
 }
 .instagram{
-  margin-top:-42px;
-  margin-left:-180px;
+  margin-top:-40px;
+  margin-left:-60px;
 }
 .footer-logo{
   margin-bottom:-500px;
@@ -294,6 +305,13 @@ margin-left: -290px;
 @media (min-width:766px) and (max-width:916px) {
   .head-content,#projects,footer{
     flex-direction: column;
+}
+.type-h1{
+  font-size:70%;
+
+}
+#toolkit{
+  margin-bottom: 20%;
 }
 .head-text{
   margin:auto;
@@ -324,41 +342,66 @@ margin-left: -290px;
     font-size: 10px;
   }
   .linkedin{
-    margin-left: -180px;
+  
     margin-top: 45px;
   }
   .email{
-    margin-left: -295px;
+    margin-left: -65px;
     margin-top: -35px;
   }
   .github{
     margin-top: 30px;
-  margin-left: -290px;
+  margin-left: -50px;
   }
   .instagram{
     margin-top:-42px;
-    margin-left:-180px;
+   
   }
 }
+@media (min-width:720px)and(max-width:918px){
 
-@media (min-width:830px) and (max-width:1190px) {
+  .socialIcon{
+    margin-left: 200px;
+
+  }
+  .linkedin,.instagram{
+    margin-left:300px ;
+
+  }
+  .email,.github{
+    margin-left: 300px;
+  }
+  .github{
+    margin-top: 50px;
+
+  }
+}
+@media (min-width:920px) and (max-width:1190px) {
+
   .linkedin{
-    margin-left: -190px;
+    margin-left: -110px;
     margin-top: 35px;
   }
   .email{
-    margin-left: -295px;
+    margin-left: -225px;
     margin-top: -35px;
   }
   .github{
     margin-top: 24px;
-  margin-left: -290px;
+  margin-left: -220px;
   }
   .instagram{
     margin-top:-60px;
-    margin-left:-180px;
+    margin-left:-110px;
   }
   .onClickTextOverImage div{
     height: max-content;
+  }
+}
+
+@media (max-width:1025px){
+  .type-h1{
+    font-size:55%;
+  
   }
 }
