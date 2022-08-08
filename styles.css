@@ -88,7 +88,8 @@ h3,
 .dictionary-h2,
 .dictionary-features,
 .assist-h2,
-.assist-h3 {
+.assist-h3,
+.assist-h4 {
   font-family: "Playfair Display", serif;
 }
 h1 {
@@ -175,11 +176,30 @@ h3 {
   width: 100%;
   margin: 0;
 }
-.skills-span {
+.skills-span,
+#assistRepoLinks,
+.coloursDiv,
+.assist-illustration {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+}
+.coloursDiv {
+  width: 100%;
+}
+.assist-illustration {
+  margin: 10%;
+  width: 100%;
+  padding: 10px;
+}
+.assistIllustration-text,
+.assistIllustration {
+  width: 50%;
+}
+.coloursP {
+  width: 50%;
+  padding: 10px;
 }
 .fa-genderless {
   margin: 20px 15px 0;
@@ -216,7 +236,8 @@ ol li,
 #dictionary-main,
 .dictionary-tools,
 #tools-row,
-#assistMeIntro {
+#assistMeIntro,
+.assist-personas {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -241,7 +262,10 @@ ol li,
   margin: 5%;
   width: 40%;
 }
-.assist-background li,
+.assist-text {
+  margin-top: -1%;
+}
+.assist-research li,
 .assist-ul li {
   display: block;
 }
@@ -273,7 +297,7 @@ ol li,
   color: #2b2b28;
   text-decoration: none;
 }
-.assist-background p {
+.assist-research p {
   width: 60%;
 }
 .fleur-svg {
@@ -285,15 +309,71 @@ ol li,
   height: auto;
 }
 .gallery-tools,
-.dictionary-tools {
+.dictionary-tools,
+.assistLinks {
   margin-top: 10%;
 }
 .dictionaryMain-img {
   width: 550px;
   height: auto;
 }
+#assistMeIntro {
+  justify-content: center;
+}
 .assistMain-img {
   width: 500px;
+}
+#assistPersona {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  width: 100%;
+  justify-content: center;
+}
+.assistPerona-text {
+  width: 400px;
+  margin-top: 8%;
+}
+.assist-personas {
+  width: 50%;
+}
+.assistPersona-img {
+  width: 340px;
+  height: auto;
+  margin: 15px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.assistPantone {
+  width: 180px;
+  height: auto;
+
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.assistCell {
+  width: 600px;
+  height: auto;
+}
+.assist-research,
+#assistMe-product {
+  margin: auto;
+}
+.assist-research,
+#assistMe-product {
+  padding: 50px;
+  width: 70%;
+}
+.userSvg {
+  width: 100px;
+  height: auto;
+  fill: #3b39a82a;
+}
+#challenges,
+.assistMadeWith {
+  width: 50%;
+  margin: auto;
+}
+.assistMadeWith {
+  margin-top: 5%;
 }
 .dictionary-features {
   margin-top: 6%;
@@ -400,7 +480,8 @@ small {
   .carousel-text,
   #gallery-main1,
   #gallery-main2,
-  #dictionary-main {
+  #dictionary-main,
+  #assistPersona {
     width: 100%;
   }
   .gallery-text,
@@ -422,7 +503,8 @@ small {
     height: auto;
   }
 
-  #tools {
+  #tools,
+  #assistPersona {
     flex-direction: column;
   }
 
