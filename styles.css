@@ -77,7 +77,8 @@ li {
 #introduction,
 .project-p,
 .galleryExploreMore,
-.dictionaryExploreMore {
+.dictionaryExploreMore,
+.watchExploreMore {
   text-align: center;
 }
 
@@ -89,7 +90,7 @@ h3,
 .dictionary-features,
 .assist-h2,
 .assist-h3,
-.assist-h4 {
+.problems-h2 {
   font-family: "Playfair Display", serif;
 }
 h1 {
@@ -179,14 +180,20 @@ h3 {
 .skills-span,
 #assistRepoLinks,
 .coloursDiv,
-.assist-illustration {
+.assist-illustration,
+.watch-problem,
+#watch-main1 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
 }
-.coloursDiv {
+.coloursDiv,
+.watch-problem {
   width: 100%;
+}
+.watch-problem {
+  padding: 10%;
 }
 .assist-illustration {
   margin: 10%;
@@ -198,8 +205,7 @@ h3 {
   width: 50%;
 }
 .coloursP {
-  width: 50%;
-  padding: 10px;
+  width: fit-content;
 }
 .fa-genderless {
   margin: 20px 15px 0;
@@ -258,10 +264,12 @@ ol li,
 }
 .gallery-text,
 .dictionary-text,
-.assist-text {
+.assist-text,
+.watch-text {
   margin: 5%;
   width: 40%;
 }
+
 .assist-text {
   margin-top: -1%;
 }
@@ -277,7 +285,8 @@ ol li,
 .gallery-nextProject,
 .gallery-link,
 .dictionary-link,
-.assist-link {
+.assist-link,
+.watch-nextProject {
   text-decoration: none;
 }
 .assist-link {
@@ -293,7 +302,9 @@ ol li,
 .gallery-nextProject,
 .dictionary-link:hover,
 .dictionary-nextProject,
-.assist-link:hover {
+.assist-link:hover,
+.watch-nextProject,
+.watch-nextProject:hover {
   color: #2b2b28;
   text-decoration: none;
 }
@@ -304,9 +315,27 @@ ol li,
   width: 20px;
   height: auto;
 }
-.mgCell-img {
+.mgCell-img,
+.accuwatch {
   width: 650px;
   height: auto;
+}
+.watch-problemText {
+  width: 30%;
+}
+.watch-problemImage {
+  width: 40%;
+}
+.cons-h4 {
+  margin-top: 30%;
+}
+.pro-h4 {
+  margin-top: 15%;
+}
+.watch-problemText ul {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
 }
 .gallery-tools,
 .dictionary-tools,
@@ -362,10 +391,22 @@ ol li,
   padding: 50px;
   width: 70%;
 }
+.assist-research {
+  margin-top: -15%;
+  z-index: 1;
+}
+.coloursDiv {
+  width: 100%;
+}
+.coloursPDiv {
+  width: fit-content;
+}
 .userSvg {
-  width: 100px;
+  margin-left: 60%;
+  width: 200px;
   height: auto;
-  fill: #3b39a82a;
+  fill: #1c1c1f2a;
+  z-index: -2;
 }
 #challenges,
 .assistMadeWith {
@@ -481,7 +522,11 @@ small {
   #gallery-main1,
   #gallery-main2,
   #dictionary-main,
-  #assistPersona {
+  #assistPersona,
+  .assist-text,
+  .assist-text p,
+  .watch-problemText,
+  .watch-problemImage {
     width: 100%;
   }
   .gallery-text,
@@ -504,7 +549,9 @@ small {
   }
 
   #tools,
-  #assistPersona {
+  #assistPersona,
+  .assist-text,
+  .watch-problem {
     flex-direction: column;
   }
 
@@ -525,13 +572,20 @@ small {
   .mgDesk-img,
   .mgCell-img,
   .carouselDictionary-img,
-  .dictionaryMain-img {
+  .dictionaryMain-img,
+  .assistMain-img,
+  .accuwatch {
     width: 100%;
     height: auto;
   }
   .dictionary-features {
     margin-left: 0;
   }
+}
+.smartWatch-img {
+  width: 300px;
+  height: auto;
+  margin-top: 15%;
 }
 @media (min-width: 741px) and (max-width: 1181px) {
   nav {
