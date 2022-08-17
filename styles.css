@@ -182,7 +182,8 @@ h3 {
 .coloursDiv,
 .assist-illustration,
 .watch-problem,
-#watch-main1 {
+#watch-main1,
+.solutionImage {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -195,6 +196,7 @@ h3 {
 .watch-problem {
   padding: 10%;
 }
+
 .assist-illustration {
   margin: 10%;
   width: 100%;
@@ -223,7 +225,8 @@ h3 {
 ol li,
 .gallery-ul,
 .dictionary-ul,
-.tool-col {
+.tool-col,
+.watch-ul {
   display: flex;
   flex-direction: column;
 }
@@ -248,6 +251,17 @@ ol li,
   flex-direction: row;
   flex-wrap: wrap;
 }
+.solutionText {
+  width: 70%;
+  margin: auto;
+}
+.solutionText p {
+  width: 70%;
+}
+.solutionP {
+  width: 60%;
+}
+
 #gallery-main1,
 #dictionary-main {
   height: 450px;
@@ -286,7 +300,8 @@ ol li,
 .gallery-link,
 .dictionary-link,
 .assist-link,
-.watch-nextProject {
+.watch-nextProject,
+.watch-link {
   text-decoration: none;
 }
 .assist-link {
@@ -298,13 +313,20 @@ ol li,
 .dictionary-link {
   color: #a9bd93;
 }
+.watch-link {
+  color: #7f8487;
+}
+.watchExploreMore {
+  margin-top: 10%;
+}
 .gallery-link:hover,
 .gallery-nextProject,
 .dictionary-link:hover,
 .dictionary-nextProject,
 .assist-link:hover,
 .watch-nextProject,
-.watch-nextProject:hover {
+.watch-nextProject:hover,
+.watch-link:hover {
   color: #2b2b28;
   text-decoration: none;
 }
@@ -341,6 +363,10 @@ ol li,
 .dictionary-tools,
 .assistLinks {
   margin-top: 10%;
+}
+.watch-links {
+  margin-top: 22%;
+  color: #7f8487;
 }
 .dictionaryMain-img {
   width: 550px;
@@ -470,7 +496,8 @@ footer {
   margin-bottom: 2%;
   text-align: center;
 }
-.footer-end {
+.footer-end,
+.solutionText {
   display: flex;
   flex-direction: row;
 }
@@ -526,9 +553,14 @@ small {
   .assist-text,
   .assist-text p,
   .watch-problemText,
-  .watch-problemImage {
+  .watch-problemImage,
+  .solutionText p,
+  .solutionP,
+  .watch-text p,
+  .watch-text h1 {
     width: 100%;
   }
+
   .gallery-text,
   .dictionary-text {
     width: 80%;
@@ -551,7 +583,8 @@ small {
   #tools,
   #assistPersona,
   .assist-text,
-  .watch-problem {
+  .watch-problem,
+  .solutionText {
     flex-direction: column;
   }
 
