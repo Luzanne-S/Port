@@ -20,6 +20,7 @@
     ></script>
 
     <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
     <title>Luzanne Smith - Dictionary App</title>
   </head>
   <body>
@@ -93,55 +94,52 @@
         </ul>
       </div>
     </div>
-    <section id="features">
+    <!--Explore Next Project-->
+    <section data-aos="fade-up" data-aos-duration="1500">
       <h2 class="dictionary-features">Features</h2>
-      <div class="feature1" data-aos="fade-right" data-aos-duration="1500">
-        <div>
-          <h4 class="features-h4">
-            The user can toggle the switch to dark mode
-          </h4>
-        </div>
-        <div>
-          <img src="images/dictionDark.png" class="carouselDictionary-img" />
-        </div>
-      </div>
-
-      <div class="feature2" data-aos="fade-left" data-aos-duration="1500">
-        <div>
-          <img
-            src="images/dictonPhonetics.png"
-            class="carouselDictionary-img"
-          />
-        </div>
-        <div><h4 class="features-h4">Phonetics for the searched word</h4></div>
-      </div>
-      <div class="feature3" data-aos="fade-right" data-aos-duration="1500">
-        <div>
-          <h4 class="features-h4">Available nouns and examples are provided</h4>
-        </div>
-        <div>
-          <img src="images/dictionNoun.png" class="carouselDictionary-img" />
-        </div>
-      </div>
-      <div class="feature4" data-aos="fade-left" data-aos-duration="1500">
-        <div>
-          <img src="images/dictionPhotos.png" class="carouselDictionary-img" />
-        </div>
-        <div>
-          <h4 class="features-h4">
-            Adjectives and photos associated with search result are reflected
-          </h4>
+      <div class="slider">
+        <input
+          type="radio"
+          name="slider"
+          title="slide1"
+          checked="checked"
+          class="slider__nav"
+        />
+        <input type="radio" name="slider" title="slide2" class="slider__nav" />
+        <input type="radio" name="slider" title="slide3" class="slider__nav" />
+        <input type="radio" name="slider" title="slide4" class="slider__nav" />
+        <div class="slider__inner">
+          <div class="slider__contents">
+            <img src="images/dictionDark.png" class="carouselDictionary-img" />
+            <p class="slider__txt">
+              The user can toggle the switch to dark mode
+            </p>
+          </div>
+          <div class="slider__contents">
+            <img
+              src="images/dictionPhonetics.png"
+              class="carouselDictionary-img"
+            />
+            <p class="slider__txt">Phonetics for the searched word</p>
+          </div>
+          <div class="slider__contents">
+            <img src="images/dictionNoun.png" class="carouselDictionary-img" />
+            <p class="slider__txt">Available nouns and examples are provided</p>
+          </div>
+          <div class="slider__contents">
+            <img src="images/dictionPhoto.png" class="carouselDictionary-img" />
+            <p class="slider__txt">
+              Adjectives and photos associated with search result are reflected
+            </p>
+          </div>
         </div>
       </div>
     </section>
-
     <!--Explore Next Project-->
     <div class="dictionaryExploreMore">
       <h3 class="dictionary-h3">Have a look at another project:</h3>
       <h4>
-        <a href="dictionary.html" class="dictionary-nextProject"
-          >Dictionary App
-        </a>
+        <a href="assistme.html" class="dictionary-nextProject">AssistMe </a>
       </h4>
     </div>
 
