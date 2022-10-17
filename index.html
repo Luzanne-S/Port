@@ -38,19 +38,13 @@
       </ul>
     </nav>
     <!--Header-->
-    <section id="introduction">
-      <div class="intro1">
-        <img src="images/introImage.png" class="introImage" />
-      </div>
+    <section id="introduction" data-aos="fade-up" data-aos-duration="1500">
       <div class="intro2">
         <h1>Luzanne Smith</h1>
         <h3 class="intro-h3">
           UX Designer<br />
           & <br />Junior Front End Developer
         </h3>
-      </div>
-      <div class="intro3">
-        <img src="images/introImage2.png" class="introImage2" />
       </div>
     </section>
     <!--Projects-->
@@ -111,9 +105,9 @@
         </div>
       </div>
       <p class="project-p">
-        for more projects please have a look at my github profile
-        <a href="https://github.com/Luzanne-S" target="_blank">
-          <i class="fa-solid fa-compass"></i>
+        for more projects please have a look at my
+        <a href="https://github.com/Luzanne-S" target="_blank"
+          >github profile
         </a>
       </p>
     </section>
@@ -157,18 +151,27 @@
       </div>
       <div class="footer-col2">
         <img src="images/footerImage2.png" class="footer-img2" />
-        <form>
+        <!--edit action=pages and create your own return message- check documentation-->
+        <form
+          name="contact"
+          action="/pages/success"
+          method="POST"
+          data-netlify="true"
+        >
           <label>Full Name:</label>
-          <input type="text" class="form-name" />
+          <input type="text" name="name" class="form-name" />
           <label>Email:</label>
-          <input type="text" class="form-email" />
+          <input type="text" name="email" class="form-email" />
           <label>Message:</label>
-          <input type="text" class="form-message" />
-          <button>Submit</button>
+          <textarea type="text" name="message" class="form-message"> </textarea>
+          <button type="submit">Send</button>
         </form>
       </div>
     </footer>
-    <small class="footer-Small"> made by me</small>
+    <small class="footer-Small">
+      <a href="#"> <i class="fa-solid fa-chevron-up"></i></a>
+      <br
+    /></small>
     <!--Animate on scroll script-->
     <script>
       AOS.init();
