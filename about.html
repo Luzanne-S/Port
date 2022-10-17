@@ -33,6 +33,7 @@
     </nav>
     <!--About-->
     <section id="about" data-aos="fade-up" data-aos-duration="1500">
+      <div class="about1">
              <h1>About Me</h1>
              <p class="about-p">
               I am a UX designer and front end developer with an educational background in
@@ -51,11 +52,15 @@
               development with the hopes of joining an amazing company and creating
               extrodinary projects that will have a positive impact&#46;
             </p>
-
+          </div>
+            <div class="about2">
+              <img src="images/aboutImg.png" class="about-img"/>
+            </div>
     </section>
 
     <!--Skills-->
-    <section id="skills" data-aos="fade-up" data-aos-duration="1500">       
+    <section id="skills" data-aos="fade-up" data-aos-duration="1500"> 
+      <div>     
  <h2 class="about-h2">Skills</h2>
  <div class="skills-row">
  <span class="skills-span">
@@ -70,8 +75,12 @@
   <p>Wireframing</p>
  </span>
 </div>
+</div> 
     </section>
-
+    <div>
+      <img src="images/skillImg.png" class="skillsImg"/>
+      
+    </div>
     <!--Development Tools-->
     <section id="tools" data-aos="fade-up" data-aos-duration="1500">
 <h2 class="about-h2">Toolkit</h2>
@@ -124,7 +133,9 @@
     </section>
 <!--Footer-->
 <footer id="cta">
-    <div class="footer-row">
+  <div class="footer-col1">
+    <div class="footerCol1-1">
+      <h2>Contact Me</h2>
       <h3>
         Feel free to contact me for development opportunities or just to
         connect
@@ -156,11 +167,31 @@
       ></span>
     </div>
 
-    <span class="footer-end">
-      <hr />
-      <a href="#"> <i class="fa-solid fa-arrow-up-long"></i></a>
-    </span>
-    <small> made by me</small>
+    <img src="images/footerImage1.png" class="footer-img1" />
+  </div>
+  <div class="footer-col2">
+    <img src="images/footerImage2.png" class="footer-img2" />
+    <!--edit action=pages and create your own return message- check documentation-->
+    <form
+      name="contact"
+      action="/pages/success"
+      method="POST"
+      data-netlify="true"
+    >
+      <label>Full Name:</label>
+      <input type="text" name="name" class="form-name" />
+      <label>Email:</label>
+      <input type="text" name="email" class="form-email" />
+      <label>Message:</label>
+      <textarea type="text" name="message" class="form-message"> </textarea>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+</footer>
+<small class="footer-Small">
+  <a href="#"> <i class="fa-solid fa-chevron-up"></i></a> 
+  </small
+>
   </footer>
   <script>
     AOS.init();
