@@ -15,6 +15,9 @@ footer h3 {
 footer h3 {
   font-weight: 400;
 }
+.intro-h3 {
+  color: #441e21;
+}
 .nav-logo {
   width: 200px;
   height: 200px;
@@ -42,8 +45,7 @@ li a {
 li a,
 .fa-right-long,
 .gallery-h3,
-.dictionary-h3,
-.intro-h3 {
+.dictionary-h3 {
   color: #2b2b28;
 }
 li {
@@ -55,7 +57,7 @@ li {
   text-decoration: none;
   letter-spacing: 0.15em;
   display: inline-block;
-  padding: 15px;
+  padding: 15px 15px 0;
   position: relative;
 }
 .nav-link:after {
@@ -75,10 +77,21 @@ li {
   left: 0;
 }
 #introduction {
+  background-image: url("images/intro.png");
+  background-position: center;
+  height: 115vh;
+  background-size: cover;
   display: flex;
   flex-direction: row;
   width: 100%;
-  margin-top: -2%;
+  margin: auto;
+}
+#about {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 3%;
 }
 .project-p {
   padding-top: 15px;
@@ -113,18 +126,21 @@ h3,
 .problems-h2,
 .assist-h2-1,
 #wireframe h2,
-footer h2 {
+footer h2,
+.project-p {
   font-family: "Playfair Display", serif;
 }
 h1 {
   font-weight: 600;
-  font-size: 40px;
+  font-size: 50px;
+  color: #253120;
 }
 h2 {
   font-weight: 300;
 }
 .intro-h2 {
   text-align: center;
+  margin-bottom: 5%;
 }
 .introImage {
   width: 500px;
@@ -141,10 +157,21 @@ h2 {
 
 .intro2 {
   text-align: center;
-  margin: 5% 0 0 5%;
+  margin: auto;
 }
-.intro3 {
-  margin-top: 8%;
+
+.about1 {
+  width: 40%;
+  margin-left: 20%;
+}
+.about2 {
+  width: 60%;
+}
+.about-img {
+  width: 700px;
+}
+.skillsImg {
+  width: 100%;
 }
 .project-grid {
   width: 60%;
@@ -153,6 +180,9 @@ h2 {
   flex-wrap: wrap;
   margin-left: 30px;
   margin-right: 0;
+}
+#projects {
+  margin-top: 10%;
 }
 .projects-text {
   margin-top: 100px;
@@ -195,12 +225,6 @@ h2 {
   grid-column: span 2;
 }
 
-#about {
-  width: 50%;
-  margin: auto;
-  padding-bottom: 3%;
-}
-
 #skills {
   padding-bottom: 2%;
   width: 100%;
@@ -209,6 +233,7 @@ h2 {
 .about-h2 {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .skills-row {
@@ -284,9 +309,9 @@ h2 {
 .tool-col {
   padding: 30px;
 }
-.tools-row {
-  display: flex;
-  flex-wrap: wrap;
+.tools-Img {
+  width: 50%;
+  margin: 0;
 }
 ol li,
 .gallery-ul,
@@ -579,6 +604,17 @@ footer form {
   margin-left: 100px;
 }
 
+.fa-chevron-up {
+  border-radius: 50%;
+  padding: 10px;
+  border: solid;
+  color: #b52744;
+  border-top-color: #b52744;
+  border-right-color: #b52744;
+  border-left-color: #b52744;
+  border-bottom-color: #b52744;
+  background-color: #fffaf8;
+}
 .fa-brands,
 .fa-envelope {
   font-size: 15px;
@@ -617,10 +653,10 @@ footer h3 {
   width: 400px;
 }
 form {
-  position: absolute;
+  position: relative;
   width: 400px;
-  bottom: -1520px;
-  right: 250px;
+  bottom: -300px;
+  right: 0;
 }
 form input,
 form button {
@@ -687,8 +723,8 @@ small,
   color: #818181ac;
 }
 .footer-Small {
-  position: absolute;
-  bottom: -1600px;
+  position: relative;
+  bottom: -280px;
   left: 740px;
 }
 
@@ -716,7 +752,9 @@ small,
   .tile {
     margin-bottom: 1rem;
   }
-
+  .footer-Small {
+    display: none;
+  }
   #about,
   .carousel-text,
   #gallery-main1,
@@ -747,10 +785,14 @@ small,
   #haus-main2,
   .introImage,
   .introImage2,
-  .footer-col1 {
+  .footer-col1,
+  .about1,
+  .about2,
+  .about-img {
     width: 100%;
   }
-  .project-p {
+  .project-p,
+  .about1 {
     margin: 0;
   }
   .gallery-text,
@@ -784,7 +826,8 @@ small,
   .assistCL,
   .assistDesign,
   #assistMeIntro,
-  footer {
+  footer,
+  #about {
     flex-direction: column;
   }
   form {
@@ -993,17 +1036,20 @@ small,
     width: 100%;
     margin: 0;
   }
+
   #assistMe-product {
     justify-content: center;
     width: 60%;
   }
-
+  footer {
+    flex-direction: row;
+  }
   #tools,
   #assistMeIntro,
   .assistCL,
   .assistDesign,
   #introduction,
-  footer {
+  #about {
     flex-direction: column;
   }
 
