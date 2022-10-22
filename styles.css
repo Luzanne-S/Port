@@ -68,9 +68,12 @@ li {
   height: 2px;
   left: 50%;
   position: absolute;
-  background: rgb(2, 2, 2);
+  background: #e57737;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
+}
+.nav-ul a:hover {
+  color: #e57737;
 }
 .nav-link:hover:after {
   width: 100%;
@@ -84,7 +87,7 @@ li {
   display: flex;
   flex-direction: row;
   width: 100%;
-  margin: auto;
+  margin: 0 auto 0;
 }
 #about {
   display: flex;
@@ -97,6 +100,13 @@ li {
   padding-top: 15px;
   width: 20%;
   margin: auto;
+}
+p.project-p a {
+  text-decoration: dashed;
+  color: #b52744;
+}
+p.project-p a:hover {
+  color: #e57737;
 }
 #introduction,
 .project-p,
@@ -219,7 +229,10 @@ h2 {
 .tile:nth-child(3) {
   grid-column: span 2;
 }
-
+.tile:nth-child(4) {
+  grid-column: span 4;
+  grid-row: span 2;
+}
 .tile:nth-child(5),
 .tile:nth-child(6) {
   grid-column: span 2;
@@ -658,6 +671,7 @@ form {
   bottom: -300px;
   right: 0;
 }
+
 form input,
 form button {
   padding: 10px;
@@ -666,6 +680,10 @@ form button {
 form label {
   padding-left: 2%;
   font-size: small;
+}
+textarea,
+input:focus {
+  outline-color: #7e9ac2;
 }
 
 .form-message,
@@ -679,6 +697,8 @@ form label {
 }
 .form-message {
   padding: 50px;
+  width: 388px;
+  margin: 7px;
 }
 
 form button {
@@ -722,12 +742,26 @@ small,
 .footer-p {
   color: #818181ac;
 }
-.footer-Small {
+.footer-Small,
+.project-small {
   position: relative;
   bottom: -280px;
   left: 740px;
 }
+.projectFooter {
+  justify-content: center;
+}
+.footerP-col {
+  width: 30%;
+  text-align: center;
+}
 
+.footerImg-pro {
+  width: 350px;
+}
+.footer-logo {
+  width: 200px;
+}
 @media (max-width: 741px) {
   .nav-logo {
     width: 100px;
@@ -745,6 +779,15 @@ small,
     color: #2b2b28;
     padding: 20px 10px 14px;
     text-decoration: none;
+  }
+  #introduction {
+    background-image: url("images/intro.png");
+    background-position: center;
+    height: 80vh;
+    background-size: cover;
+  }
+  h1 {
+    font-size: 25px;
   }
   .container {
     display: block;
@@ -837,6 +880,9 @@ small,
     bottom: 25px;
     right: 0;
     left: 40px;
+  }
+  textarea.form-message {
+    width: 300px;
   }
   #tools {
     flex-wrap: wrap;
@@ -1022,6 +1068,10 @@ small,
     margin: auto;
     margin-bottom: 10%;
   }
+  .footer-col2 {
+    position: relative;
+    right: -100px;
+  }
   .mgCell-img {
     width: 80%;
     margin: auto;
@@ -1044,6 +1094,41 @@ small,
   footer {
     flex-direction: row;
   }
+  .footer-col2 {
+    width: fit-content;
+  }
+  .footer-img2 {
+    position: absolute;
+    right: 0;
+    width: 400px;
+  }
+  form {
+    position: relative;
+    width: 400px;
+    bottom: -300px;
+    right: 0;
+  }
+
+  form input,
+  form button {
+    padding: 10px;
+    margin: 7px;
+  }
+  form label {
+    padding-left: 2%;
+    font-size: small;
+  }
+  textarea,
+  input:focus {
+    outline-color: #7e9ac2;
+  }
+
+  .form-message {
+    padding: 50px;
+    width: 388px;
+    margin: 7px;
+  }
+
   #tools,
   #assistMeIntro,
   .assistCL,
@@ -1084,6 +1169,9 @@ small,
     position: relative;
     right: 0;
     bottom: 0;
+  }
+  textarea.form-message {
+    width: 286px;
   }
   .footer-Small {
     display: none;
