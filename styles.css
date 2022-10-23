@@ -99,7 +99,7 @@ li {
 .project-p {
   padding-top: 15px;
   width: 20%;
-  margin: auto;
+  margin: 5% auto 5%;
 }
 p.project-p a {
   text-decoration: dashed;
@@ -345,7 +345,9 @@ footer form {
   height: auto;
   margin: auto;
 }
-
+hr {
+  width: 70%;
+}
 #gallery-main1,
 #gallery-main2,
 #dictionary-main,
@@ -639,7 +641,7 @@ footer form {
 }
 
 .fa-brands:hover,
-.fa-solid:hover {
+.fa-envelope:hover {
   border: solid;
   border-top-color: #7e9ac2;
   border-right-color: #7e9ac2;
@@ -648,6 +650,7 @@ footer form {
   background-color: #fffaf8;
   color: #7e9ac2;
 }
+
 footer {
   padding-top: 10%;
   height: 80vh;
@@ -742,20 +745,37 @@ small,
 .footer-p {
   color: #818181ac;
 }
-.footer-Small,
-.project-small {
+.footer-Small {
   position: relative;
   bottom: -280px;
   left: 740px;
 }
+.project-Small {
+  position: relative;
+  bottom: 180px;
+}
 .projectFooter {
   justify-content: center;
+  padding-top: 0;
+  height: 30%;
 }
 .footerP-col {
   width: 30%;
   text-align: center;
 }
+.footerP-col:nth-child(2) {
+  margin-top: 80px;
+}
 
+.projectFooter-link {
+  text-decoration: none;
+  padding: 0 20px 0;
+  color: #253120;
+}
+
+.projectFooter-link:hover {
+  color: #762651;
+}
 .footerImg-pro {
   width: 350px;
 }
@@ -797,6 +817,11 @@ small,
   }
   .footer-Small {
     display: none;
+  }
+  .project-Small {
+    position: relative;
+    bottom: -80px;
+    left: 15px;
   }
   #about,
   .carousel-text,
@@ -847,7 +872,8 @@ small,
 
   #gallery-main1,
   #gallery-main2,
-  #tools {
+  #tools,
+  .footerP-col {
     display: flex;
   }
 
@@ -870,8 +896,20 @@ small,
   .assistDesign,
   #assistMeIntro,
   footer,
-  #about {
+  #about,
+  .footerP-col {
     flex-direction: column;
+  }
+  .footerP-col:nth-child(1),
+  .footerP-col:nth-child(3) {
+    margin-left: 25%;
+  }
+  .footerP-col:nth-child(2) {
+    width: 350px;
+    margin: auto;
+  }
+  .footerP-col:nth-child(3) {
+    margin-left: 5%;
   }
   form {
     position: relative;
@@ -1072,6 +1110,10 @@ small,
     position: relative;
     right: -100px;
   }
+  .project-Small {
+    bottom: -50px;
+    left: 20px;
+  }
   .mgCell-img {
     width: 80%;
     margin: auto;
@@ -1128,16 +1170,29 @@ small,
     width: 388px;
     margin: 7px;
   }
-
+  .projectFooter {
+    display: flex;
+    height: 20%;
+  }
   #tools,
   #assistMeIntro,
   .assistCL,
   .assistDesign,
   #introduction,
-  #about {
+  #about,
+  .projectFooter {
     flex-direction: column;
   }
-
+  .footerP-col:nth-child(1),
+  .footerP-col:nth-child(3) {
+    margin-left: 35%;
+  }
+  .footerP-col:nth-child(2) {
+    width: 500px;
+  }
+  .footerP-col:nth-child(2) {
+    margin: auto;
+  }
   .assistMain-image,
   .illustrationDiv,
   .assistDesign,
