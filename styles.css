@@ -137,7 +137,8 @@ h3,
 .assist-h2-1,
 #wireframe h2,
 footer h2,
-.project-p {
+.project-p,
+.corporateQuote {
   font-family: "Playfair Display", serif;
 }
 h1 {
@@ -179,6 +180,10 @@ h2 {
 }
 .about-img {
   width: 700px;
+}
+.corporateQuote {
+  color: #5f8652;
+  font-size: larger;
 }
 .skillsImg {
   width: 100%;
@@ -332,7 +337,8 @@ ol li,
 .tool-col,
 .watch-ul,
 .footer-col1,
-footer form {
+footer form,
+.corporateAudience ul {
   display: flex;
   flex-direction: column;
 }
@@ -630,8 +636,13 @@ hr {
   border-bottom-color: #b52744;
   background-color: #fffaf8;
 }
+.fa-chevron-up:hover {
+  color: #fffaf8;
+  background-color: #b52744;
+}
 .fa-brands,
 .fa-envelope {
+  border: solid;
   font-size: 15px;
   background-color: #7e9ac2;
   border-radius: 50%;
