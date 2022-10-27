@@ -340,7 +340,6 @@ h2 {
   margin: 0;
 }
 ol li,
-.gallery-ul,
 .dictionary-ul,
 .tool-col,
 .watch-ul,
@@ -351,11 +350,19 @@ footer form,
 .corporateCosts ul,
 .Summary-Solution ul,
 .corporateWebsite ul,
-.siteLinks {
+.siteLinks,
+.swadbrief-text ul,
+.swadWireframe-text ul {
   display: flex;
   flex-direction: column;
 }
-
+.swadWireframe-text ul {
+  text-align: center;
+}
+.fa-arrow-down {
+  color: #c80036;
+  margin: 5px 0 5px;
+}
 .dictionary-ul {
   margin-left: -20%;
 }
@@ -367,8 +374,7 @@ footer form,
 hr {
   width: 70%;
 }
-#gallery-main1,
-#gallery-main2,
+
 #dictionary-main,
 .dictionary-tools,
 #tools-row,
@@ -398,14 +404,9 @@ hr {
   width: 60%;
 }
 
-#gallery-main1,
 #dictionary-main {
   height: 450px;
   margin-top: 1%;
-}
-#gallery-main2 {
-  margin-top: 5%;
-  margin-left: 15%;
 }
 
 .dictionary-tools {
@@ -433,12 +434,18 @@ hr {
   margin-top: 8%;
   padding-left: 10%;
 }
-
-.corporate-text {
+#swad-Intro {
+  margin-bottom: 10%;
+}
+.corporate-text,
+.swad-text {
   margin: auto;
   width: 60%;
 }
-
+.swad-text,
+.competitors-intro {
+  margin: 5% auto 5%;
+}
 .siteLinks a {
   text-decoration: none;
   color: #253120;
@@ -569,6 +576,51 @@ img {
 }
 .styleDiv h4 {
   text-align: center;
+}
+.swad-logo {
+  width: 200px;
+  display: block;
+  margin: auto;
+}
+.swadcomp-img,
+.swadcomp-text,
+.swadbrief-img,
+.swadbrief-text {
+  width: 100%;
+}
+.swadbrief,
+.competitors-intro {
+  margin-bottom: 15%;
+}
+.swadbrief-img {
+  margin-left: 20%;
+}
+.swadcomp-text,
+.swad-logo {
+  margin: 10% 0 0 5%;
+}
+.swadComp {
+  width: 500px;
+  display: block;
+  margin: auto;
+}
+.swadCellHighFrame,
+.swadDeskHighFrame {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+.swaddesktop {
+  width: 600px;
+  display: block;
+  margin: auto;
+}
+.swadDesktopwire,
+.swadphonewire {
+  width: 80%;
+  height: auto;
+  display: block;
+  margin: 10% auto 10%;
 }
 .assist-text {
   margin-top: -1%;
@@ -994,8 +1046,6 @@ small,
   }
   #about,
   .carousel-text,
-  #gallery-main1,
-  #gallery-main2,
   #dictionary-main,
   #assistPersona,
   .assist-text,
@@ -1028,7 +1078,9 @@ small,
   .about-img,
   .CorpwebsiteText,
   .CorpwebsiteImg,
-  .styleDiv {
+  .styleDiv,
+  .swadbrief-text,
+  .swadcomp-text {
     width: 100%;
   }
   .project-p,
@@ -1037,7 +1089,8 @@ small,
   }
   .corporate-text,
   .dictionary-text,
-  .watch-text p {
+  .watch-text p,
+  .swad-text {
     width: 80%;
     margin-bottom: 20%;
   }
@@ -1059,16 +1112,15 @@ small,
   .styleDiv h4 {
     text-align: center;
   }
-  #gallery-main1,
-  #gallery-main2,
+
   #tools,
   .footerP-col {
     display: flex;
   }
 
-  #gallery-main1,
-  #gallery-main2,
-  #dictionary-main {
+  #dictionary-main,
+  .swadbrief,
+  .swadcompetitor {
     flex-direction: column-reverse;
     height: auto;
   }
@@ -1120,14 +1172,14 @@ small,
   #dictionary-main {
     margin-top: 30%;
   }
-  #gallery-main2 {
-    margin: auto;
-  }
+
   .assistCell,
   .illustration,
   .footer-img1,
   .footer-img2,
-  .mindmap {
+  .mindmap,
+  .swaddesktop,
+  .swadComp {
     margin-top: 0;
     width: 300px;
   }
@@ -1292,8 +1344,7 @@ small,
   ul.nav-ul {
     margin-top: 20px;
   }
-  #haus-main2,
-  #gallery-main2 {
+  #haus-main2 {
     width: 50%;
     margin: auto;
     margin-bottom: 10%;
@@ -1310,8 +1361,7 @@ small,
     width: 80%;
     margin: auto;
   }
-  #gallery-main1,
-  #gallery-main2,
+
   #dictionary-main {
     flex-direction: column-reverse;
     height: auto;
@@ -1459,7 +1509,8 @@ small,
     margin-bottom: 70px;
   }
   .corporate-text,
-  .gallery-tools {
+  .gallery-tools,
+  .swad-text {
     width: 70%;
   }
   .gallery-image {
@@ -1468,10 +1519,5 @@ small,
   }
   .mgDesk-img {
     width: 500px;
-  }
-}
-@media (min-width: 1182px) and (max-width: 1380px) {
-  #gallery-main1 {
-    flex-direction: column;
   }
 }
