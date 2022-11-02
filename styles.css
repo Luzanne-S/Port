@@ -271,7 +271,8 @@ h2 {
 #assistMe-web,
 .Corpwebsite,
 .screening-row,
-.interview-row {
+.interview-row,
+#interiorInterviews {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -281,8 +282,15 @@ h2 {
 .interview-col {
   width: 50%;
 }
+.interiorIntCol {
+  width: 40%;
+}
+.interiorInterview {
+  margin: auto;
+}
 .Nscreening,
-.Ninterview {
+.Ninterview,
+.interiorInterview {
   width: 500px;
   height: auto;
 }
@@ -361,7 +369,8 @@ footer form,
 #Newgen-ResearchActiv ul,
 #Newgen-Intro ul,
 #interiorIntro ul,
-#interiorResearch ul {
+#interiorResearch ul,
+.interiorWebCol ul {
   display: flex;
   flex-direction: column;
 }
@@ -467,7 +476,8 @@ hr {
 .swad-text,
 #CorpApp h2,
 #CorpApp p,
-.corp-h2 {
+.corp-h2,
+.interiorCenter {
   margin: auto;
   width: 60%;
 }
@@ -1138,7 +1148,8 @@ small,
   .corporate-text,
   .dictionary-text,
   .watch-text p,
-  .swad-text {
+  .swad-text,
+  .interiorCenter {
     width: 80%;
     margin-bottom: 20%;
   }
@@ -1190,7 +1201,8 @@ small,
   .corpStyling,
   .Corpwebsite,
   .screening-row,
-  .interview-row {
+  .interview-row,
+  #interiorInterviews {
     flex-direction: column;
   }
   .footerP-col:nth-child(1),
@@ -1233,7 +1245,8 @@ small,
   .Nscreening,
   .Ninterview,
   .newBankMap,
-  .newgenapp {
+  .newgenapp,
+  .interiorInterview {
     margin-top: 0;
     width: 300px;
   }
@@ -1469,7 +1482,8 @@ small,
   }
   .corporate-text,
   .gallery-tools,
-  .swad-text {
+  .swad-text,
+  .interiorCenter {
     width: 70%;
   }
   .gallery-image {
