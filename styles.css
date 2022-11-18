@@ -280,7 +280,11 @@ h2 {
   width: 500px;
   height: auto;
 }
-
+.interiorPersona {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
 .designCol {
   width: fit-content;
   margin: 2% 5% 2% 5%;
@@ -323,9 +327,15 @@ footer form,
 .interiorWebCol ul,
 .ebg-text ul,
 .ebg-ul,
-#Plan-ebg ul {
+#Plan-ebg ul,
+.interiorCenter ul,
+.interior-siteLinks,
+#CorpApp ul {
   display: flex;
   flex-direction: column;
+}
+#CorpApp ul {
+  padding: 5% 0 5%;
 }
 .swadWireframe-text ul {
   text-align: center;
@@ -334,7 +344,9 @@ footer form,
   color: #c80036;
   margin: 5px 0 5px;
 }
-
+.corp-arrow {
+  color: #b1d182;
+}
 .tool-icon {
   width: 30px;
   height: auto;
@@ -358,6 +370,12 @@ hr {
   margin: auto;
   width: 80%;
 }
+.researchMap {
+  width: 70%;
+  display: block;
+  margin: auto;
+}
+
 .mindmap,
 .newBankMap {
   width: 100%;
@@ -387,6 +405,9 @@ hr {
 .stylingh2 {
   padding-bottom: 5%;
 }
+h2 {
+  padding-bottom: 3%;
+}
 #ebg-design h2 {
   margin-left: 20%;
 }
@@ -410,6 +431,13 @@ hr {
   margin: auto;
   width: 60%;
 }
+#CorpApp ul {
+  width: 30%;
+  text-align: center;
+  margin: auto;
+  align-items: center;
+}
+
 .ebgwireframe {
   width: 90%;
 }
@@ -446,7 +474,14 @@ hr {
 .ebg-siteLinks:hover {
   color: #15a04a;
 }
-
+.interior-siteLinks {
+  margin-left: 4%;
+  text-decoration: none;
+  color: #bb85ab;
+}
+.interior-siteLinks:hover {
+  color: #7a5770;
+}
 .corporateLaptop,
 .ebgLaptop {
   width: 100%;
@@ -553,8 +588,14 @@ img {
 .corporateReach,
 .corporateImpact,
 .corporateAudience,
-.corporationMap {
+.corporationMap,
+.corporateReflection {
   margin: 10% auto 10%;
+}
+.corporationStyling p {
+  width: 50%;
+  margin: auto;
+  padding-bottom: 5%;
 }
 .styling-img,
 .ebgImg-col {
@@ -565,7 +606,8 @@ img {
 .corpStyling,
 .ebgDesign-row,
 .ebgWebsite-row,
-.ebgDesign-row {
+.ebgDesign-row,
+.interiorWebRow {
   display: flex;
   flex-direction: row;
   justify-content: center;
