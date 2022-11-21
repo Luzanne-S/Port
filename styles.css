@@ -283,6 +283,13 @@ h2 {
 #interview {
   margin-top: 10%;
 }
+
+#Plan-ebg h2,
+#ebg-design h2,
+#ebg-wireframe h2,
+#ebg-website h2 {
+  margin-top: 15%;
+}
 .Nscreening,
 .Ninterview,
 .interiorInterview {
