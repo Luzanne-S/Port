@@ -171,7 +171,8 @@ h2 {
   width: 700px;
   margin-top: -100px;
 }
-.mindMap-h2 {
+.mindMap-h2,
+.interiorCenter h2 {
   margin-top: 10%;
 }
 .corporateQuote {
@@ -276,6 +277,9 @@ h2 {
 .interiorIntCol {
   width: 40%;
 }
+.interiorWebCol {
+  width: 50%;
+}
 .interiorInterview {
   margin: auto;
 }
@@ -355,7 +359,8 @@ footer form,
 #CorpApp ul {
   padding: 5% 0 5%;
 }
-.swadWireframe-text ul {
+.swadWireframe-text ul,
+.interiorWireframeDiv ul {
   text-align: center;
 }
 .fa-arrow-down {
@@ -367,6 +372,10 @@ footer form,
 }
 .newgenArrow {
   color: #055099;
+  margin: 10px auto 10px;
+}
+.interiorArrow {
+  color: #b36ab3;
   margin: 10px auto 10px;
 }
 .tool-icon {
@@ -449,7 +458,8 @@ h2 {
 #ebg-intro,
 #Plan-ebg,
 #ebg-wireframe,
-#ebg-website {
+#ebg-website,
+.interiorWireDiv {
   margin: auto;
   width: 60%;
 }
@@ -468,8 +478,18 @@ h2 {
   margin: auto;
 }
 .ebgWireframe1,
-.ebgWireframe2 {
+.ebgWireframe2,
+.interiorDesktopWire,
+.interiorMobileWire {
   width: 100%;
+}
+.interiorMobileWire1 {
+  width: 75%;
+  display: block;
+  margin: auto;
+}
+#interior-reflection {
+  margin-bottom: 10%;
 }
 .ngb-text,
 .ngb-text1 {
@@ -512,6 +532,9 @@ h2 {
 }
 .interior-siteLinks:hover {
   color: #7a5770;
+}
+.interiorIpad {
+  width: 80%;
 }
 .corporateLaptop,
 .ebgLaptop {
@@ -1008,7 +1031,8 @@ small,
   .interview-row,
   #interiorInterviews,
   .ebgDesign-row,
-  .ebgWebsite-row {
+  .ebgWebsite-row,
+  .interiorWebRow {
     flex-direction: column;
   }
   .footerP-col:nth-child(1),
@@ -1165,7 +1189,8 @@ small,
   .Corpwebsite,
   .screening-row,
   .interview-row,
-  .ebgDesign-row {
+  .ebgDesign-row,
+  .interiorWebRow {
     flex-direction: column;
   }
   .footerP-col:nth-child(1),
