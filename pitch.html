@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+    <meta
+      name="keywords"
+      content=" ux design, ux designer,front end development, web design"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script
+      src="https://kit.fontawesome.com/5d391d372a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <title>Luzanne Smith - Personal Pitch</title>
+  </head>
+  <body>
+    <!--Navbar-->
+    <nav>
+      <img src="images/nav-logo.png" class="nav-logo" alt="luzanne logo" />
+      <ul class="nav-ul">
+        <li><a class="nav-link active" href="index.html">HOME</a></li>
+        <li><a class="nav-link" href="about.html">ABOUT</a></li>
+        <li><a class="nav-link" href="pitch.html">PITCH</a></li>
+        <li><a class="nav-link" href="#cta">CONTACT</a></li>
+      </ul>
+    </nav>
+    <!--Pitch-->
+    <section id="pitch">
+      <h1>Coming soon...</h1>
+    </section>
+    <!--Footer-->
+    <footer id="cta">
+      <div id="contact" class="footer-col1">
+        <div class="footerCol1-1">
+          <h2>Contact Me</h2>
+          <h3>
+            Feel free to contact me for development opportunities or just to
+            connect
+          </h3>
+
+          <span>
+            <a
+              class="socialIcon"
+              href="mailto:luzanne.codes@gmail.com"
+              target="_blank"
+              ><i class="fa-solid fa-envelope"></i></a
+            ><a
+              class="socialIcon"
+              href="https://www.linkedin.com/in/luzannesmith"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+            <a
+              class="socialIcon"
+              href="https://github.com/Luzanne-S"
+              target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </span>
+        </div>
+
+        <img src="images/footerImage1.png" class="footer-img1" />
+      </div>
+      <div class="footer-col2">
+        <img src="images/footerImage2.png" class="footer-img2" />
+        <!--edit action=pages and create your own return message- check documentation-->
+        <form
+          name="contact"
+          action="/pages/success"
+          method="POST"
+          data-netlify="true"
+        >
+          <label>Full Name:</label>
+          <input type="text" name="name" class="form-name" />
+          <label>Email:</label>
+          <input type="text" name="email" class="form-email" />
+          <label>Message:</label>
+          <textarea type="text" name="message" rows="5" class="form-message">
+          </textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </footer>
+    <small class="footer-Small">
+      <a href="#"> <i class="fa-solid fa-chevron-up"></i></a>
+      <br
+    /></small>
+    <!--Animate on scroll script-->
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
