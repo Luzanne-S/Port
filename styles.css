@@ -939,6 +939,7 @@ small,
     height: 100px;
   }
   ul.nav-ul {
+    font-size: 13px;
     justify-content: center;
     width: 100%;
     margin-bottom: 55px;
@@ -1097,6 +1098,12 @@ small,
   .interiorInterview {
     margin-top: 0;
     width: 300px;
+  }
+  iframe,
+  video {
+    width: 300px;
+    height: auto;
+    margin: auto;
   }
 }
 
