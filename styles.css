@@ -1283,3 +1283,11 @@ small,
     width: 70%;
   }
 }
+
+.resume_btn {
+  background-color: rgba(0, 128, 0, 0.738);
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  border-radius: 30px;
+}
