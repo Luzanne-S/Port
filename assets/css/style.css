@@ -1,0 +1,1409 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #272829;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: "Quicksand", sans-serif;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+}
+.linkedin-connect {
+  font-size: 30px;
+  color: #fff;
+}
+.linkedin-connect:hover {
+  color: #ecbe99;
+}
+.services-connect {
+  padding-top: 10%;
+  height: 60vh;
+}
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+
+.back-to-top i {
+  font-size: 28px;
+  color: #ecbe99;
+  line-height: 0;
+}
+
+.back-to-top i:hover,
+.back-to-top:hover {
+  background: #ecbe99;
+  color: #fff;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: #fff;
+}
+
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid #eac0de;
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: animate-preloader 1s linear infinite;
+  animation: animate-preloader 1s linear infinite;
+}
+
+@-webkit-keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*--------------------------------------------------------------
+# Disable aos animation delay on mobile devices
+--------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+  [data-aos-delay] {
+    transition-delay: 0 !important;
+  }
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 9997;
+  transition: all 0.5s;
+  padding: 15px;
+  overflow-y: auto;
+}
+
+@media (max-width: 991px) {
+  #header {
+    width: 300px;
+    background: #fff;
+    border-right: 1px solid #e6e9ec;
+    left: -300px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/**
+* Desktop Navigation 
+*/
+.nav-menu {
+  padding: 0;
+  display: block;
+}
+
+.nav-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-menu > ul > li {
+  position: relative;
+  white-space: nowrap;
+}
+
+ul {
+  list-style: none;
+}
+
+.nav-menu a,
+.nav-menu a:focus {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  padding: 10px 18px;
+  margin-bottom: 8px;
+  transition: 0.3s;
+  font-size: 15px;
+  border-radius: 10px;
+  background: #184d47;
+  height: 56px;
+  width: 100%;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.nav-menu a i,
+.nav-menu a:focus i {
+  font-size: 20px;
+}
+
+.nav-menu a span,
+.nav-menu a:focus span {
+  padding: 0 5px 0 7px;
+  color: #fff;
+}
+
+@media (min-width: 992px) {
+  .nav-menu a,
+  .nav-menu a:focus {
+    width: 56px;
+  }
+
+  .nav-menu a span,
+  .nav-menu a:focus span {
+    display: none;
+    color: #184d47;
+  }
+}
+
+.nav-menu a:hover,
+.nav-menu .active,
+.nav-menu .active:focus,
+.nav-menu li:hover > a {
+  color: #184d47;
+  background: #fff;
+}
+
+.nav-menu a:hover span,
+.nav-menu .active span,
+.nav-menu .active:focus span,
+.nav-menu li:hover > a span {
+  color: #184d47;
+}
+
+.nav-menu a:hover,
+.nav-menu li:hover > a {
+  width: 100%;
+  color: #184d47;
+}
+
+.nav-menu a:hover span,
+.nav-menu li:hover > a span {
+  display: block;
+}
+
+/**
+* Mobile Navigation 
+*/
+.mobile-nav-toggle {
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  z-index: 9998;
+  border: 0;
+  background: none;
+  font-size: 28px;
+  transition: all 0.4s;
+  outline: none !important;
+  line-height: 0;
+  cursor: pointer;
+  border-radius: 50px;
+  padding: 5px;
+}
+
+.mobile-nav-toggle i {
+  color: #184d47;
+}
+
+.mobile-nav-active {
+  overflow: hidden;
+}
+
+.mobile-nav-active #header {
+  left: 0;
+}
+
+.mobile-nav-active .mobile-nav-toggle {
+  color: #184d47;
+  background-color: #184d47;
+}
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+  width: 100%;
+  height: 100vh;
+  background: url("../img/pexels-secret-garden-931162.jpg") no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+}
+#hero:before {
+  position: absolute;
+  content: "";
+  background: #94715498;
+  inset: 0;
+}
+#hero1 {
+  width: 100%;
+  height: 100vh;
+}
+
+#hero h1,
+#hero1 h1 {
+  margin-left: -15%;
+  margin-bottom: 5%;
+  text-align: center;
+  font-size: 200px;
+  font-weight: 700;
+  line-height: 150px;
+  color: #fff;
+}
+
+#hero p,
+#hero1 p {
+  color: #fff;
+  margin: 15px 0 0 0;
+  text-align: center;
+  font-size: 26px;
+  font-weight: bolder;
+  font-family: "Poppins", sans-serif;
+}
+
+#hero p span {
+  color: #fff;
+  font-weight: bolder;
+  letter-spacing: 1px;
+}
+
+#hero .social-links {
+  margin-top: 30px;
+  margin-left: 350px;
+}
+
+#hero .social-links a {
+  font-size: 24px;
+  display: inline-block;
+  color: #fff;
+  line-height: 1;
+  margin-right: 20px;
+  transition: 0.3s;
+}
+
+#hero .social-links a:hover {
+  color: #fff;
+  scale: 1.5;
+}
+@media (min-width: 992px) {
+  #hero,
+  #hero1 {
+    padding-left: 160px;
+  }
+}
+@media (max-width: 413px) {
+  #hero {
+    background: url("../img/pexels-secret-garden-2879833_mobile.jpg") no-repeat;
+    background-size: contain;
+  }
+  #hero:before {
+    position: absolute;
+    content: "";
+    background: #94715498;
+    inset: 0;
+    height: 75vh;
+  }
+  #hero .social-links {
+    margin-top: 30px;
+    margin-left: -100px;
+  }
+  #hero .social-links a {
+    margin: auto;
+  }
+}
+@media (min-width: 767px) and (max-width: 913px) {
+  #hero {
+    background: url("../img/pexels-secret-garden-931162.jpg");
+    background-size: cover;
+  }
+
+  #hero h1 {
+    font-size: 100px;
+  }
+
+  #hero p {
+    margin-left: 50px;
+    margin-top: 10px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  #hero .social-links {
+    margin-top: 30px;
+    margin-left: -200px;
+  }
+}
+@media (max-width: 992px) {
+  #hero {
+    text-align: center;
+  }
+
+  #hero h1 {
+    font-size: 46px;
+    line-height: 36px;
+  }
+
+  #hero p {
+    margin-left: 25px;
+    margin-top: 10px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+  padding: 80px 0;
+  overflow: hidden;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.section-title h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+.section-title p {
+  margin-bottom: 0;
+}
+p {
+  width: 70%;
+  margin: auto;
+}
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+
+#about .container {
+  width: 100%;
+}
+.about .content h3,
+h3 {
+  font-weight: 700;
+  font-size: 26px;
+  color: #728394;
+}
+.about .container .row .content {
+  text-align: center;
+  margin: auto;
+}
+.about .content p:last-child {
+  margin-bottom: 0;
+}
+.about .container .section-title .quote-icon-left,
+.about .container .section-title .quote-icon-right {
+  color: pink;
+  font-size: 26px;
+}
+
+/*--------------------------------------------------------------
+# Skills
+--------------------------------------------------------------*/
+#skills {
+  background-color: #ecbe99;
+  color: #184d47;
+  height: 90vh;
+}
+
+.skills .progress {
+  height: 60px;
+  display: block;
+  background: none;
+  border-radius: 0;
+}
+.skills .row .skills-content {
+  margin: auto;
+}
+.skills .progress .skill {
+  padding: 10px 0;
+  margin: 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 800;
+  font-size: large;
+  font-family: "Poppins", sans-serif;
+  color: #184d47;
+}
+.skills-list {
+  text-align: center;
+}
+@media (max-width: 413px) {
+  #skills {
+    background-color: #ecbe99;
+    color: #fff;
+    height: 100%;
+  }
+}
+/*--------------------------------------------------------------
+# Portfolio
+--------------------------------------------------------------*/
+
+.portfolio .portfolio-item {
+  margin-bottom: 30px;
+}
+
+.portfolio #portfolio-flters {
+  padding: 0;
+  margin: 0 auto 25px auto;
+  list-style: none;
+  text-align: center;
+  background: #fff;
+  border-radius: 50px;
+  padding: 2px 15px;
+}
+
+.portfolio #portfolio-flters li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #272829;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.portfolio #portfolio-flters li:hover,
+.portfolio #portfolio-flters li.filter-active {
+  color: #0563bb;
+}
+
+.portfolio #portfolio-flters li:last-child {
+  margin-right: 0;
+}
+
+.portfolio .portfolio-wrap {
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  background: rgba(69, 80, 91, 0.8);
+}
+
+.portfolio .portfolio-wrap::before {
+  content: "";
+  background: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  left: 30px;
+  right: 30px;
+  top: 30px;
+  bottom: 30px;
+  transition: all ease-in-out 0.3s;
+  z-index: 2;
+  opacity: 0;
+}
+
+.portfolio .portfolio-wrap .portfolio-info {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  z-index: 3;
+  transition: all ease-in-out 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio .portfolio-wrap .portfolio-info::before {
+  display: block;
+  content: "";
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  top: 35px;
+  left: 35px;
+  border-top: 3px solid #d7dce1;
+  border-left: 3px solid #d7dce1;
+  transition: all 0.5s ease 0s;
+  z-index: 9994;
+}
+
+.portfolio .portfolio-wrap .portfolio-info::after {
+  display: block;
+  content: "";
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  bottom: 35px;
+  right: 35px;
+  border-bottom: 3px solid #d7dce1;
+  border-right: 3px solid #d7dce1;
+  transition: all 0.5s ease 0s;
+  z-index: 9994;
+}
+
+.portfolio .portfolio-wrap .portfolio-info,
+h4 {
+  font-size: 20px;
+  color: #45505b;
+  font-weight: 600;
+}
+
+.portfolio .portfolio-wrap .portfolio-info p {
+  color: #45505b;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+}
+
+.portfolio .portfolio-wrap .portfolio-links {
+  text-align: center;
+  z-index: 4;
+}
+
+.portfolio .portfolio-wrap .portfolio-links a {
+  color: #45505b;
+  margin: 0 2px;
+  font-size: 28px;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.portfolio .portfolio-wrap .portfolio-links a:hover {
+  color: #148af9;
+}
+
+.portfolio .portfolio-wrap:hover::before {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 1;
+}
+
+.portfolio .portfolio-wrap:hover .portfolio-info {
+  opacity: 1;
+}
+
+.portfolio .portfolio-wrap:hover .portfolio-info::before {
+  top: 15px;
+  left: 15px;
+}
+
+.portfolio .portfolio-wrap:hover .portfolio-info::after {
+  bottom: 15px;
+  right: 15px;
+}
+
+/*--------------------------------------------------------------
+# Portfolio Details
+--------------------------------------------------------------*/
+.portfolio-details {
+  padding-top: 40px;
+}
+
+.portfolio-details .portfolio-details-slider img {
+  width: 100%;
+}
+
+.portfolio-details .portfolio-details-slider .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.portfolio-details
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+  border: 1px solid #0563bb;
+}
+
+.portfolio-details
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet-active {
+  background-color: #0563bb;
+}
+.portfolio-info {
+  margin-top: 20%;
+}
+.portfolio-details .portfolio-info {
+  padding: 30px;
+  box-shadow: 0px 0 30px rgba(69, 80, 91, 0.08);
+}
+
+.portfolio-details .portfolio-info h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.portfolio-details .portfolio-info ul {
+  padding: 0;
+  font-size: 15px;
+  list-style: circle;
+}
+
+.portfolio-details .portfolio-info ul li + li {
+  margin-top: 10px;
+}
+
+.portfolio-details .portfolio-description {
+  padding-top: 30px;
+}
+
+.portfolio-details .portfolio-description h2 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.portfolio-details {
+  padding: 0;
+}
+.portfolio-description {
+  margin: 50px;
+}
+.portfolio-description p {
+  margin-left: -8px;
+}
+
+/*--------------------------------------------------------------
+# Services
+--------------------------------------------------------------*/
+#contact-me {
+  background-image: url("../img/pexels-secret-garden-2879833.jpg");
+  position: relative;
+  bottom: -60px;
+  background-size: cover;
+  color: #fff;
+  width: 100%;
+  height: 50%;
+}
+#contact-me:before {
+  position: absolute;
+  content: "";
+  background: rgba(60, 110, 112, 0.521);
+  inset: 0;
+}
+.services .icon-box {
+  text-align: center;
+  padding: 70px 20px 80px 20px;
+  transition: all ease-in-out 0.3s;
+  background: #fff;
+  box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.05);
+}
+
+.services .icon-box .icon {
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: ease-in-out 0.3s;
+  position: relative;
+}
+
+.services .icon-box .icon i {
+  font-size: 36px;
+  transition: 0.5s;
+  position: relative;
+}
+
+.services .icon-box .icon svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.services .icon-box .icon svg path {
+  transition: 0.5s;
+  fill: #f5f5f5;
+}
+
+.services .icon-box h4 {
+  font-weight: 600;
+  margin: 10px 0 15px 0;
+  font-size: 22px;
+}
+
+.services .icon-box h4 a {
+  color: #45505b;
+  transition: ease-in-out 0.3s;
+}
+
+.services .icon-box p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.services .icon-box:hover {
+  border-color: #fff;
+  box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.08);
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  background-color: #184d47;
+  color: #ecbe99;
+  font-size: 14px;
+  text-align: center;
+  padding: 100px 0;
+  height: 70vh;
+}
+
+#footer h3 {
+  font-size: 70px;
+  color: #ecbe99;
+  line-height: 55px;
+  font-weight: 700;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  padding: 20px;
+  padding-bottom: 50px;
+  margin: 0 0 1px 0;
+}
+
+#footer p {
+  font-size: 15;
+  font-style: italic;
+  padding: 0;
+  margin: 0 0 40px 0;
+}
+
+#footer .social-links {
+  margin: 0 0 40px 0;
+}
+#footer a {
+  color: #ecbe99;
+}
+#footer .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  color: #ecbe99;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+#footer .social-links a:hover {
+  color: #fff;
+  text-decoration: none;
+  transform: scale(1.5);
+}
+
+#footer .credits {
+  padding-top: 4%;
+  font-size: 13px;
+}
+/*--------------------------------------------------------------
+# Mind Maps
+--------------------------------------------------------------*/
+.corpMap,
+.newmind,
+.ebgwireframe,
+.swad-high {
+  width: 90%;
+  margin: auto;
+}
+.mindmap,
+.newBankMap,
+.ebgWireframe2,
+.ebgWireframe1 {
+  width: 100%;
+}
+.card-img-top,
+.swadDeskHighFrame,
+.swadCellHighFrame,
+.swaddesktop,
+.interiorInterview,
+.interiorDesktopWire,
+.interiorMobileWire1,
+.interiorMobileWire {
+  width: 60%;
+  display: block;
+  margin: auto;
+}
+
+.Nscreening,
+.Ninterview {
+  width: 20%;
+}
+
+.bi-chevron-right {
+  color: #45505b;
+}
+/*--------------------------------------------------------------
+#EBG
+--------------------------------------------------------------*/
+
+#hero-ebg {
+  background-color: #0563bb;
+  padding-top: 20%;
+  height: 100vh;
+  color: #f5f5f5;
+  text-align: center;
+}
+#hero-ebg h1 {
+  margin-bottom: 5%;
+  font-size: 5rem;
+  font-weight: bolder;
+}
+#introduction {
+  width: 90%;
+}
+.section-title_ebg,
+.ebg-p {
+  margin-left: 15%;
+}
+.ebg-logo-size {
+  width: 100px;
+  height: auto;
+}
+
+/*----------------------------------------
+Corporate Givers
+----------------------------------------*/
+#hero-corporate {
+  background-color: #2b463c;
+  padding-top: 20%;
+  height: 100vh;
+  color: #f5f5f5;
+  text-align: center;
+}
+#hero-corporate h1 {
+  margin-bottom: 5%;
+  font-size: 5rem;
+  font-weight: bolder;
+}
+.portfolio-details-corp {
+  padding-top: 8%;
+  padding-bottom: 80px;
+  background-color: #415e32;
+}
+.audience-p {
+  color: #fff;
+}
+.portfolio-details-corp h3,
+.portfolio-details-corp h2 {
+  color: #fff;
+  margin-top: 50px;
+}
+.rev-corp {
+  margin-top: 55px;
+}
+.port-corp {
+  width: 50%;
+  margin: auto;
+}
+#portfolio-details-corp2 {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+#portfolio-details-corp-slides {
+  margin: 10% auto 10%;
+}
+.corp-app p {
+  margin-left: -1%;
+  padding-top: 10px;
+}
+#portfolio-details-corp3 {
+  background-color: #889d78;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  color: #fff;
+}
+#portfolio-details-corp3 #services-corps .row {
+  color: #272829;
+}
+.revenue-div {
+  margin: auto;
+  padding-bottom: 10px;
+  padding-top: 16px;
+  width: 50%;
+}
+.uniqu-h3 {
+  color: #2b463c;
+}
+@media (max-width: 413px) {
+  .revenue-div {
+    width: 100%;
+  }
+}
+#portfolio-details-app
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet,
+#portfolio-details-corp-slides
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+  border: 1px solid #889d78;
+}
+
+#portfolio-details-app
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet-active,
+#portfolio-details-corp-slides
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet-active {
+  background-color: #889d78;
+}
+/*------------------------------------
+Litty for Loot
+------------------------------------*/
+#hero-litty {
+  background-color: #abbd50;
+  padding-top: 20%;
+  height: 100vh;
+  color: #fff;
+  text-align: center;
+}
+#hero-litty h1 {
+  margin-bottom: 5%;
+  font-size: 5rem;
+  font-weight: bolder;
+}
+
+#portfolio-details-app {
+  margin-bottom: 5%;
+}
+#portfolio-details-litty
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+  border: 1px solid #abbd50;
+}
+
+#portfolio-details-litty
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet-active {
+  background-color: #abbd50;
+}
+/*--------------------------------
+Maji Ndogo
+--------------------------------*/
+#hero-maji {
+  background-color: #427d9d;
+  padding-top: 20%;
+  height: 100vh;
+  color: #fff;
+  text-align: center;
+}
+#hero-maji h1 {
+  margin-bottom: 5%;
+  font-size: 5rem;
+  font-weight: bolder;
+}
+#summary-maji {
+  height: 100vh;
+  padding-top: 10%;
+}
+/*--------------------------------------------------------------
+# Maji Portfolio
+--------------------------------------------------------------*/
+#portfolio-Maji {
+  background-image: url("../img/maji-visual-back.png");
+  background-position: center;
+  background-size: cover;
+}
+.portfolio .portfolio-item {
+  margin-bottom: 30px;
+}
+
+.portfolio #portfolio-flters {
+  padding: 0;
+  margin: 0 auto 25px auto;
+  list-style: none;
+  text-align: center;
+  background: #fff;
+  border-radius: 50px;
+  padding: 2px 15px;
+}
+
+.portfolio #portfolio-flters li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #272829;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.portfolio #portfolio-flters li:hover,
+.portfolio #portfolio-flters li.filter-active {
+  color: #0563bb;
+}
+
+.portfolio #portfolio-flters li:last-child {
+  margin-right: 0;
+}
+
+.portfolio .portfolio-wrap {
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  background: rgba(69, 80, 91, 0.8);
+}
+
+.portfolio .portfolio-wrap::before {
+  content: "";
+  background: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  left: 30px;
+  right: 30px;
+  top: 30px;
+  bottom: 30px;
+  transition: all ease-in-out 0.3s;
+  z-index: 2;
+  opacity: 0;
+}
+
+.portfolio .portfolio-wrap .portfolio-info {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  z-index: 3;
+  transition: all ease-in-out 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio .portfolio-wrap .portfolio-info::before {
+  display: block;
+  content: "";
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  top: 35px;
+  left: 35px;
+  border-top: 3px solid #d7dce1;
+  border-left: 3px solid #d7dce1;
+  transition: all 0.5s ease 0s;
+  z-index: 9994;
+}
+
+.portfolio .portfolio-wrap .portfolio-info::after {
+  display: block;
+  content: "";
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  bottom: 35px;
+  right: 35px;
+  border-bottom: 3px solid #d7dce1;
+  border-right: 3px solid #d7dce1;
+  transition: all 0.5s ease 0s;
+  z-index: 9994;
+}
+
+.portfolio .portfolio-wrap .portfolio-info,
+h4 {
+  font-size: 20px;
+  color: #45505b;
+  font-weight: 600;
+}
+
+.portfolio .portfolio-wrap .portfolio-info p {
+  color: #45505b;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+}
+
+.portfolio .portfolio-wrap .portfolio-links {
+  text-align: center;
+  z-index: 4;
+}
+
+.portfolio .portfolio-wrap .portfolio-links a {
+  color: #45505b;
+  margin: 0 2px;
+  font-size: 28px;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.portfolio .portfolio-wrap .portfolio-links a:hover {
+  color: #148af9;
+}
+
+.portfolio .portfolio-wrap:hover::before {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 1;
+}
+
+.portfolio .portfolio-wrap:hover .portfolio-info {
+  opacity: 1;
+}
+
+.portfolio .portfolio-wrap:hover .portfolio-info::before {
+  top: 15px;
+  left: 15px;
+}
+
+.portfolio .portfolio-wrap:hover .portfolio-info::after {
+  bottom: 15px;
+  right: 15px;
+}
+@media (max-width: 413px) {
+  #portfolio {
+    background: url("../img/portfolio-mobile.png") no-repeat;
+    background-size: contain;
+    height: auto;
+  }
+}
+@media (min-width: 767px) and (max-width: 913px) {
+}
+/*--------------------------------------------------------------
+# Marji Portfolio Details
+--------------------------------------------------------------*/
+.portfolio-details {
+  padding-top: 40px;
+}
+
+.portfolio-details .portfolio-details-slider img {
+  width: 100%;
+}
+
+.portfolio-details .portfolio-details-slider .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.portfolio-details
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+  border: 1px solid #0563bb;
+}
+
+.portfolio-details
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet-active {
+  background-color: #0563bb;
+}
+.portfolio-info {
+  margin-top: 20%;
+}
+.portfolio-details .portfolio-info {
+  padding: 30px;
+  box-shadow: 0px 0 30px rgba(69, 80, 91, 0.08);
+}
+
+.portfolio-details .portfolio-info h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.portfolio-details .portfolio-info ul {
+  padding: 0;
+  font-size: 15px;
+  list-style: circle;
+}
+
+.portfolio-details .portfolio-info ul li + li {
+  margin-top: 10px;
+}
+
+.portfolio-details .portfolio-description {
+  padding-top: 30px;
+}
+
+.portfolio-details .portfolio-description h2 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.portfolio-details {
+  padding: 0;
+}
+.portfolio-description {
+  margin: 50px;
+}
+.portfolio-description p {
+  margin-left: -8px;
+}
+
+/*--------------------------------------------------------------
+# TATA
+--------------------------------------------------------------*/
+
+#hero-tata {
+  background-color: #0a0a5f;
+  padding-top: 20%;
+  height: 100vh;
+  color: #f5f5f5;
+  text-align: center;
+}
+#hero-tata h1 {
+  margin-bottom: 5%;
+  font-size: 5rem;
+  font-weight: bolder;
+}
+#portfolio-details-tata
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+  border: 1px solid #0a0a5f;
+}
+
+#portfolio-details-tata
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet-active {
+  background-color: #0a0a5f;
+}
+/*--------------------------------------------------------------
+# PWC
+--------------------------------------------------------------*/
+
+#hero-pwc {
+  background-color: #ee9c34;
+  padding-top: 20%;
+  height: 100vh;
+  color: #f5f5f5;
+  text-align: center;
+}
+#hero-pwc h1 {
+  margin-bottom: 5%;
+  font-size: 5rem;
+  font-weight: bolder;
+}
