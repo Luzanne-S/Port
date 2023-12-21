@@ -1,162 +1,471 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=, initial-scale=1.0" />
-    <meta
-      name="keywords"
-      content=" ux design, ux designer,front end development, web design"
-    />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script
-      src="https://kit.fontawesome.com/5d391d372a.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="styles.css" />
-    <script src="script.js" defer></script>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
     <title>Luzanne Smith - Data Analyst</title>
+    <meta content="Data Analyst, Designer, Researcher" name="description" />
+    <meta content="Data Analyst, Designer, Researcher" name="keywords" />
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
   </head>
+
   <body>
-    <!--Navbar-->
-    <nav>
-      <img src="images/nav-logo.png" class="nav-logo" alt="luzanne logo" />
-      <ul class="nav-ul">
-        <li><a class="nav-link active" href="index.html">HOME</a></li>
-        <li><a class="nav-link" href="about.html">ABOUT</a></li>
-        <li><a class="nav-link" href="pitch.html">PITCH</a></li>
-        <li><a class="nav-link" href="#cta">CONTACT</a></li>
-      </ul>
-    </nav>
-    <!--Header-->
-    <section
-      id="introduction"
-      data-aos="fade-up"
-      data-aos-duration="1500"
-      style="background-image: url('images/intro.png'); background-size: cover"
-    >
-      <div class="intro2" data-aos="fade-up" data-aos-duration="2000">
-        <h1>Luzanne Smith</h1>
-        <h3 class="intro-h3">Data Analyst</h3>
+    <!-- ======= Mobile nav toggle button ======= -->
+    <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
+    <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
+    <!-- ======= Header ======= -->
+    <header id="header" class="d-flex flex-column justify-content-center">
+      <nav id="navbar" class="navbar nav-menu">
+        <ul>
+          <li>
+            <a href="#hero" class="nav-link scrollto active"
+              ><i class="bx bx-home"></i> <span>Home</span></a
+            >
+          </li>
+          <li>
+            <a href="#about" class="nav-link scrollto"
+              ><i class="bx bx-user"></i> <span>About</span></a
+            >
+          </li>
+
+          <li>
+            <a href="#portfolio" class="nav-link scrollto"
+              ><i class="bx bx-book-content"></i> <span>Portfolio</span></a
+            >
+          </li>
+
+          <li>
+            <a href="#footer" class="nav-link scrollto"
+              ><i class="bx bx-envelope"></i> <span>Contact</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+      <!-- .nav-menu -->
+    </header>
+    <!-- End Header -->
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="d-flex flex-column justify-content-center">
+      <div class="container" data-aos="zoom-in" data-aos-delay="100">
+        <h1>Luzanne<br />&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Smith</h1>
+        <p>
+          I'm a
+          <span
+            class="typed"
+            data-typed-items=" Data Analyst, Researcher, Designer"
+          ></span>
+        </p>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/luzannesmith" class="linkedin" target="_blank"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+          <a href="https://github.com/Luzanne-S" class="linkedin" target="_blank"
+            ><i class="bx bxl-github"></i
+          ></a>
+        </div>
       </div>
     </section>
-    <!--Projects-->
-    <section id="projects">
-      <h2 class="intro-h2">Portfolio</h2>
-      <div class="container" data-aos="zoom-in" data-aos-duration="1500">
-        <div class="tile">
-          <a href="Data_project.html">
-            <img
-              src="images/data_flower.png"
-              alt="illustration of a red flower"
-            />
-          </a>
+    <!-- End Hero -->
+
+    <main id="main">
+      <!-- ======= About Section ======= -->
+      <section id="about" class="about">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>About Me</h2>
+            <blockquote class="fst-italic">
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i> I have
+              learnt that every situation is unique and therefore flexibility,
+              adapability and objective thinking is needed to complete a
+              project. <i class="bx bxs-quote-alt-right quote-icon-right"> </i>
+            </blockquote>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-8 pt-4 pt-lg-0 content">
+              <p class="about-p">
+                Hello there! I'm Luzanne, a dedicated junior data analyst with a passion for uncovering insights and telling stories through data. Armed with a certificate in data analytics and an honours degree in Social Anthropology, I bring a unique blend of analytical prowess and a deep understanding of human behavior to the world of data.
+              </p>
+              <br />
+              <p>
+               
+
+              A certification in data analytics, has equipped me with the technical skills needed for extracting meaningful information from complex datasets. Additionally, my honours degree in Social Anthropology has honed my qualitative research abilities, enabling me to approach data analysis with a holistic perspective.
+              </p>
+              <br />
+              <p lass="about-p">
+                Numbers tell a story, and I'm adept at translating that narrative. Proficient in quantitative data analysis, I use tools and methodologies to distill complex information into meaningful insights. My goal is not just to crunch numbers but to derive actionable strategies for informed decision-making.
+                Beyond the numbers, I pride myself on strong communication skills. Whether presenting findings to a non-technical audience or collaborating with cross-functional teams, I ensure that the insights gained from data are accessible and actionable.</p>
+               <br/>
+
+            </div>
+          </div>
         </div>
-        <div class="tile">
-          <a href="ebg.html">
-            <img
-              src="images/ebg.png"
-              alt="illustration of a blue flowers and butterfly"
-            />
-          </a>
+      </section>
+      <!-- End About Section -->
+
+      <!-- ======= Skills Section ======= -->
+      <section id="skills" class="skills section-bg">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2 class="skills-h2">Skills</h2>
+
+          </div>
+
+          <div class="row skills-content skills-list">
+            <div class="col-lg-3">
+              <div class="progress">
+                <span class="skill">DATA ANALYSIS</span>
+              </div>
+
+              <div class="progress">
+                <span class="skill">POWER BI</span>
+              </div>
+
+              <div class="progress">
+                <span class="skill">FIGMA</span>
+              </div>
+              <div class="progress">
+                <span class="skill">CSS</span>
+              </div>
+            </div>
+
+            <div class="col-lg-3">
+              <div class="progress">
+                <span class="skill">DATA VISUALISATION </span>
+              </div>
+              <div class="progress">
+                <span class="skill">DATA CLEANING </span>
+              </div>
+              <div class="progress">
+                <span class="skill">INVISION </span>
+              </div>
+
+              <div class="progress">
+                <span class="skill">HTML</span>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="progress">
+                <span class="skill">SQL</span>
+              </div>
+              <div class="progress">
+                <span class="skill">PRESENTING</span>
+              </div>
+              <div class="progress">
+                <span class="skill">QUALITATIVE RESEARCH</span>
+              </div>
+
+              <div class="progress">
+                <span class="skill">QUANTATIVE RESEARCH</span>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="progress">
+                <span class="skill">MY SQL </span>
+              </div>
+
+              <div class="progress">
+                <span class="skill">PERSONAS </span>
+              </div>
+
+              <div class="progress">
+                <span class="skill">WEB HOSTING</span>
+              </div>
+              <div class="progress">
+                <span class="skill">WIREFRAMING</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Skills Section -->
+
+      <!-- ======= Portfolio Section ======= -->
+      <section id="portfolio" class="portfolio section-bg">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Portfolio</h2>
+            
+          </div>
+
+          <div
+            class="row portfolio-container"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-wrap">
+                <img
+                  src="assets/img/1_maji.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Maji Ndogo Water Crisis</h4>
+                  <p>Data cleaning, SQL, Data interpretation, dATA VISUALISATION</p>
+                  <div class="portfolio-links">
+                    <a
+                      href="assets/img/1_maji.png"
+                      data-gallery="portfolioGallery"
+                    ></a>
+                    <a href="maji_ndogo.html"
+                      ><i class="bx bx-link"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+              <div class="portfolio-wrap">
+                <img
+                  src="assets/img/Untitled design.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Tata Motors</h4>
+                  <p>Data Cleaning, Data interpretation, Data visualisation, Presentation</p>
+                  <div class="portfolio-links">
+                    <a
+                      href="assets/img/Untitled design.png"
+                      data-gallery="portfolioGallery"
+                      class="portfolio-lightbox"
+                      title="Web 3"
+                    ></a>
+                    <a href="tata.html"><i class="bx bx-link"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-wrap">
+                <img
+                  src="assets/img/pwc-cover.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Coming Soon</h4>
+                  <p></p>
+                  <div class="portfolio-links">
+                    <a
+                      href="assets/img/pwc-cover.png"
+                      data-gallery="portfolioGallery"
+                      class="portfolio-lightbox"
+                      title="App 2"
+                    ></a>
+                    <!--
+                    <a href="pwc.html"
+                      ><i class="bx bx-link"></i
+                    ></a>
+                    -->
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+              <div class="portfolio-wrap">
+                <img
+                  src="assets/img/cngd.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Coming Soon</h4>
+                  <p></p>
+                  <div class="portfolio-links">
+                    <a
+                      href="assets/img/cngd.png"
+                      data-gallery="portfolioGallery"
+                      class="portfolio-lightbox"
+                      title="Card 2"
+                      ></a>
+                   <!-- <a
+                      href="#"
+                      class="portfolio-details-lightbox"
+                      data-glightbox="type: external"
+                      title="Portfolio Details"
+                      ><i class="bx bx-link"></i
+                    ></a>
+                    -->
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+              <div class="portfolio-wrap">
+                <img
+                  src="assets/img/3_litty.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Litty for Loot</h4>
+                  <p>Team Work,Research, Data Analysis, Presentation</p>
+                  <div class="portfolio-links">
+                    <a
+                      href="assets/img/3_litty.png"
+                      data-gallery="portfolioGallery"
+                      class="portfolio-lightbox"
+                      title="Web 2"
+                    ></a>
+                    <a href="litty.html"
+                      ><i class="bx bx-link"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-wrap">
+                <img
+                  src="assets/img/4_corp.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Corporate Givers - Hackathon</h4>
+                  <p>Team work, Research, Wireframing, Presenting</p>
+                  <div class="portfolio-links">
+                    <a
+                      href="assets/img/4_corp.png"
+                      data-gallery="portfolioGallery"
+                    ></a>
+                    <a href="corporateGood.html"
+                      ><i class="bx bx-link"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-wrap">
+                <img
+                  src="assets/img/ebg-cover.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>EBG Group</h4>
+                  <p>Logo Design, Wireframe, Web Development</p>
+                  <div class="portfolio-links">
+                    <a
+                      href="assets/img/ebg-cover.pngs"
+                      data-gallery="portfolioGallery"
+                      class="portfolio-lightbox"
+                      title="Web 3"
+                    ></a>
+                    <a href="ebg.html"><i class="bx bx-link"></i></a>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Portfolio Section -->
+
+      <!-- ======= Services Section ======= -->
+      <section id="contact-me" class="services-connect">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Connect with Me</h2>
+            <p>Let's embark on a data-driven journey together. I'm excited about the endless possibilities that data holds and eager to contribute my skills to your team. Feel free to contact me to discuss how we can collaborate!</p>
+            <a href="https://www.linkedin.com/in/luzannesmith" class="linkedin-connect" target="_blank"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+          </div>
+        </div>
+      </section>
+      <!-- End Services Section -->
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="container">
+        <h3>Luzanne<br />&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Smith</h3>
+        <div>
+          <a href="mailto:luzannejss@gmail.com"
+            ><h5>luzanne.codes@gmail.com</h5></a
+          >
+        </div>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/luzannesmith" class="linkedin" target="_blank"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+          <a href="https://github.com/Luzanne-S" class="facebook" target="_blank"
+            ><i class="bx bxl-github"></i
+          ></a>
         </div>
 
-        <div class="tile">
-          <a href="corporateGood.html">
-            <img
-              src="images/corpGivers.png"
-              alt="illustration of a pink flower"
-            />
-          </a>
-        </div>
-        <div class="tile">
-          <a href="ALX-project.html">
-            <img src="images/alx.png" alt="illustration of a white flower" />
-          </a>
-          </a>
-        </div>
-        <div class="tile">
-          <a href="newgenbank.html">
-            <img
-              src="images/newGenBank.png"
-              alt="illustration of blue and pink flowers"
-            />
-          </a>
-        </div>
-      </div>
-      <p class="project-p">
-        for more projects please have a look at my
-        <a href="https://github.com/Luzanne-S" target="_blank"
-          >github profile
-        </a>
-      </p>
-    </section>
-
-    <!--Footer-->
-    <footer id="cta">
-      <div id="contact" class="footer-col1">
-        <div class="footerCol1-1">
-          <h2>Contact Me</h2>
-          <h3>
-            Feel free to contact me for development opportunities or just to
-            connect
-          </h3>
-
-          <span>
-            <a
-              class="socialIcon"
-              href="mailto:luzanne.codes@gmail.com"
-              target="_blank"
-              ><i class="fa-solid fa-envelope"></i></a
-            ><a
-              class="socialIcon"
-              href="https://www.linkedin.com/in/luzannesmith"
-              target="_blank"
-              ><i class="fa-brands fa-linkedin-in"></i
-            ></a>
-            <a
-              class="socialIcon"
-              href="https://github.com/Luzanne-S"
-              target="_blank"
-              ><i class="fa-brands fa-github"></i
-            ></a>
-          </span>
-        </div>
-
-        <img src="images/footerImage1.png" class="footer-img1" />
-      </div>
-      <div class="footer-col2">
-        <img src="images/footerImage2.png" class="footer-img2" />
-        <!--edit action=pages and create your own return message- check documentation-->
-        <form
-          name="contact"
-          action="/pages/success"
-          method="POST"
-          data-netlify="true"
-        >
-          <label>Full Name:</label>
-          <input type="text" name="name" class="form-name" />
-          <label>Email:</label>
-          <input type="text" name="email" class="form-email" />
-          <label>Message:</label>
-          <textarea type="text" name="message" rows="5" class="form-message">
-          </textarea>
-          <button type="submit">Send</button>
-        </form>
+        <div class="credits">Made by Me</div>
       </div>
     </footer>
-    <small class="footer-Small">
-      <a href="#"> <i class="fa-solid fa-chevron-up"></i></a>
-      <br
-    /></small>
-    <!--Animate on scroll script-->
-    <script>
-      AOS.init();
-    </script>
+    <!-- End Footer -->
+<!--Pexel photos
+Photo by Secret Garden: https://www.pexels.com/photo/close-up-photo-of-flowers-2879833/-->
+    <div id="preloader"></div>
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="arrow-up">^</i></a
+    >
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/typed.js/typed.min.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
