@@ -1089,6 +1089,9 @@ Litty for Loot
   .swiper-pagination-bullet-active {
   background-color: #abbd50;
 }
+#portfolio-details-litty {
+  margin-top: 10%;
+}
 /*--------------------------------
 Maji Ndogo
 --------------------------------*/
@@ -1392,11 +1395,11 @@ h4 {
   background-color: #0a0a5f;
 }
 /*--------------------------------------------------------------
-# PWC
+# Just in Time
 --------------------------------------------------------------*/
 
 #hero-pwc {
-  background-color: #ee9c34;
+  background-color: #f1895b;
   padding-top: 20%;
   height: 100vh;
   color: #f5f5f5;
@@ -1406,4 +1409,31 @@ h4 {
   margin-bottom: 5%;
   font-size: 5rem;
   font-weight: bolder;
+}
+#portfolio-just {
+  background-image: url("../img/just-background.png");
+  background-position: center;
+  background-size: cover;
+}
+#portfolio-details-just {
+  height: 100vh;
+  margin-top: 10%;
+}
+
+#portfolio-details-just
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+  border: 1px solid #f1895b;
+}
+
+#portfolio-details-just
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet-active {
+  background-color: #f1895b;
 }
