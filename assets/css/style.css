@@ -1410,11 +1410,7 @@ h4 {
   font-size: 5rem;
   font-weight: bolder;
 }
-#portfolio-just {
-  background-image: url("../img/just-background.png");
-  background-position: center;
-  background-size: cover;
-}
+
 #portfolio-details-just {
   height: 100vh;
   margin-top: 10%;
