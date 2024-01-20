@@ -18,7 +18,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+.corp-slide-link {
   font-family: "Poppins", sans-serif;
 }
 .linkedin-connect {
@@ -974,6 +975,22 @@ Corporate Givers
   font-size: 5rem;
   font-weight: bolder;
 }
+.corp-slide-link {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  align-items: center;
+  margin: 0 auto 5%;
+  padding: 20px;
+  border: solid;
+  color: #184d47;
+  border-color: #184d47;
+  font-weight: 700;
+}
+.corp-slide-link:hover {
+  border-color: #184d47ad;
+  color: #184d47ad;
+}
 .portfolio-details-corp {
   padding-top: 8%;
   padding-bottom: 80px;
@@ -1026,6 +1043,9 @@ Corporate Givers
 @media (max-width: 413px) {
   .revenue-div {
     width: 100%;
+  }
+  .corp-slide-link {
+    width: 70%;
   }
 }
 #portfolio-details-app
@@ -1434,4 +1454,21 @@ h4 {
   .swiper-pagination
   .swiper-pagination-bullet-active {
   background-color: #f1895b;
+}
+
+/*--------------------------------------------------------------
+# Gauteng
+--------------------------------------------------------------*/
+
+#hero-gauteng {
+  background-color: #0e2954;
+  padding-top: 20%;
+  height: 100vh;
+  color: #f5f5f5;
+  text-align: center;
+}
+#hero-gauteng h1 {
+  margin-bottom: 5%;
+  font-size: 5rem;
+  font-weight: bolder;
 }
