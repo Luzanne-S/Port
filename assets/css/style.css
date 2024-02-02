@@ -1131,6 +1131,13 @@ Maji Ndogo
   height: 100vh;
   padding-top: 10%;
 }
+
+a.maji_github-link {
+  color: #148af9;
+}
+a.maji_github-link:hover {
+  font-weight: bolder;
+}
 /*--------------------------------------------------------------
 # Maji Portfolio
 --------------------------------------------------------------*/
@@ -1382,7 +1389,7 @@ h4 {
 }
 
 /*--------------------------------------------------------------
-# TATA
+# Energy
 --------------------------------------------------------------*/
 
 #hero-tata {
@@ -1396,6 +1403,16 @@ h4 {
   margin-bottom: 5%;
   font-size: 5rem;
   font-weight: bolder;
+}
+iframe.tableauViz {
+  width: 90%;
+  height: autoS;
+}
+#portfolio-energy.container {
+  height: 100vh;
+}
+#viz1706628302879.tableauPlaceholder {
+  height: 800px;
 }
 #portfolio-details-tata
   .portfolio-details-slider
