@@ -1393,7 +1393,7 @@ h4 {
 --------------------------------------------------------------*/
 
 #hero-tata {
-  background-color: #0a0a5f;
+  background-color: #015289;
   padding-top: 20%;
   height: 100vh;
   color: #f5f5f5;
@@ -1404,15 +1404,27 @@ h4 {
   font-size: 5rem;
   font-weight: bolder;
 }
+#portfolio-details-eng-intro {
+  margin: 50px auto 50px;
+}
 iframe.tableauViz {
   width: 90%;
-  height: autoS;
+  height: auto;
+}
+#portfolio-energy {
+  background-color: #363d4a;
+}
+#portfolio-energy .container .section-title h2 {
+  color: #fff;
 }
 #portfolio-energy.container {
   height: 100vh;
 }
 #viz1706628302879.tableauPlaceholder {
   height: 800px;
+}
+#portfolio-details-energy {
+  margin: 100px auto 100px;
 }
 #portfolio-details-tata
   .portfolio-details-slider
